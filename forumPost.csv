@@ -1,0 +1,75 @@
+comment
+"
+                
+Given a large unordered array of long random numbers and a target long, what's the most efficient algorithm for finding the closest number?
+
+@Test
+public void findNearest() throws Exception {
+    final long[] numbers = {90L, 10L, 30L, 50L, 70L};
+    Assert.assertEquals(""nearest"", 10L, findNearest(numbers, 12L));
+}
+
+    "
+"Iterate through the array of longs once. Store the current closest number and the distance to that number. Continue checking each number if it is closer, and just replace the current closest number when you encounter a closer number.
+
+This gets you best performance of O(n).
+
+Building a binary tree as suggested by other answerer will take O(nlogn). Of course future search will only take O(logn)...so it may be worth it if you do a lot of searches.
+
+If you are pro, you can parallelize this with openmp or thread library, but I am guessing that is out of the scope of your question.
+    "
+"If you do not intend to do multiple such requests on the array there is no better way then the brute force linear time check of each number. 
+
+If you will do multiple requests on the same array first sort it and then do a binary search on it - this will reduce the time for such requests to O(log(n)) but you still pay the O(n*log(n)) for the sort so this is only reasonable if the number of requests is reasonably large i.e. k*n >>(a lot bigger then) n*log(n) + k* log(n) where k is the number of requests.
+
+If the array will change, then create a binary search tree and do a lower bound request on it. This again is only reasonable if the nearest number request is relatively large with comparison to array change requests and also to the number of elements. As the cost of building the tree is O(n*log(n)) and also the cost of updating it is O(logn) you need to have k*log(n) + n*log(n) + k*log(n) <<(a lot smaller then) k*n
+    "
+"IMHO, I think that you should use a Binary Heap (http://en.wikipedia.org/wiki/Binary_heap) which has the insertion time of O(log n), being O(n log n) for the entire array. For me, the coolest thing about the binary heap is that it can be made inside from your own array, without overhead. Take a look the heapfy section.
+
+""Heapfying"" your array turns possible to get the bigger/lower element in O(1).
+    "
+"if you build a binary search tree from your numbers and search against. O(log n) would be the complexity in worst case. In your case you won't search for equality instead, you'll looking for the smallest return value through subtraction
+    "
+"I would check the difference between the numbers while iterating through the array and save the min value for that difference.
+
+If you plan to use findNearest multiple times I would calculate the difference while sorting (with an sorting algorithm of complexity n*log(n)) after each change of values in that array
+    "
+"The time complex to do this job is O(n), the length of the numbers. 
+
+    final long[] numbers = {90L, 10L, 30L, 50L, 70L};
+    long tofind = 12L;
+    long delta = Long.MAX_VALUE;
+    int index = -1;
+    int i = 0;
+    while(i < numbers.length){
+        Long tmp = Math.abs(tofind - numbers[i]);
+        if(tmp < delta){
+            delta = tmp;
+            index = i;
+        }
+        i++;
+    }
+
+    System.out.println(numbers[index]); //if index is not -1
+
+
+But if you want to find many times with different values such as 12L against the same numbers array, you may sort the array first and binary search against the sorted numbers array.
+    "
+"If your search is a one-off, you can partition the array like in quicksort, using the input value as pivot. 
+
+If you keep track - while partitioning - of the min item in the right half, and the max item in the left half, you should have it in O(n) and 1 single pass over the array. 
+
+I'd say it's not possible to do it in less than O(n) since it's not sorted and you have to scan the input at the very least.
+
+If you need to do many subsequent search, then a BST could help indeed.
+    "
+"You could do it in below steps
+
+Step 1 : Sort array
+
+Step 2 : Find index of the search element
+
+Step 3 : Based on the index, display the number that are at the Right & Left Side
+
+Let me know incase of any queries...
+    "

@@ -12,6 +12,10 @@ BOT_NAME = 'case'
 SPIDER_MODULES = ['case.spiders']
 NEWSPIDER_MODULE = 'case.spiders'
 
+#Export as CSV Feed
+FEED_FORMAT = "csv"
+FEED_URI = "forumPost.csv"
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'case (+http://www.yourdomain.com)'
