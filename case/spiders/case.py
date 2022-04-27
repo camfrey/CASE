@@ -12,7 +12,10 @@ class CaseSpider(scrapy.Spider):
         words = response.css(".s-prose.js-post-body *::text").extract()
         comment = ""
         fullDoc = []
+        voteList = []
 
+        #iterates through all the lines for all the comments
+        #since there will be more than one line per comment, this for loop will be O(n) where n >= number of comments
         for item in zip(words):
             #create a dictionary to store the scraped info
             print("here: ",item[0])
@@ -23,18 +26,24 @@ class CaseSpider(scrapy.Spider):
                 print("MITSKIMITSKIMITSKI")
                 fullDoc.append(comment)
                 rnCounter += 1
-                scraped_info = {
-                    'comment' : comment
-                }
                 comment = ""
-                yield scraped_info
             else:
                 comment += item[0]
         
         #since \r\n doesn't exist for the last comment, need to do it one more time
-        scraped_info = {
-            'comment' : comment
-        }
-        comment = ""
-        yield scraped_info
-        print(fullDoc)
+        fullDoc.append(comment)
+
+        #for loop for votes and probably other stuff later
+        #THIS FOR LOOP IS OF A DIFFERENT SIZE THAN THE FOR LOOP FOR THE WORDS
+        for item in zip(votes):
+            voteList.append(item[0])
+
+        #going to do the scraped info yield here
+        i = 0
+        for item in fullDoc:
+            scraped_info = {
+                'comment' : fullDoc[i],
+                'vote' : voteList[i]
+            }
+            yield scraped_info
+            i += 1
