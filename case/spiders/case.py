@@ -1,12 +1,17 @@
 import scrapy
 import re
 
+urlVal = 5
+
 class CaseSpider(scrapy.Spider):
     name = 'case'
-    allowed_domains = ['https://stackoverflow.com/questions/5']
+    allowed_domains = ['stackoverflow.com']
     start_urls = ['https://stackoverflow.com/questions/5']
 
     def parse(self, response):
+        if(response.url == "https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65"):
+            print("here")
+            raise exceptions.CloseSpider('bad url')
         votes = response.css(".js-vote-count.flex--item.d-flex.fd-column.ai-center.fc-black-500.fs-title::text").extract()
         words = response.css(".s-prose.js-post-body *::text").extract()
         dates = response.css(".flex--item.ws-nowrap.mr16.mb8 *").extract()
@@ -102,3 +107,14 @@ class CaseSpider(scrapy.Spider):
             }
             yield scraped_info
             i += 1
+
+        print("ayo\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+        print(response.url)
+        global urlVal
+        urlVal += 30
+        print(urlVal)
+        if(urlVal < 200):
+            next_page = "https://stackoverflow.com/questions/" + str(urlVal)
+            print(next_page)
+            yield scrapy.Request(url=next_page, callback=self.parse)
+
