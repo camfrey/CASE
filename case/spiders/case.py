@@ -1,3 +1,4 @@
+from logging import exception
 import scrapy
 import re
 
@@ -11,7 +12,7 @@ class CaseSpider(scrapy.Spider):
     def parse(self, response):
         if(response.url == "https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65"):
             print("here")
-            raise exceptions.CloseSpider('bad url')
+            raise exception.CloseSpider('bad url')
 
         titles = response.css(".question-hyperlink::text").extract()
         votes = response.css(".js-vote-count.flex--item.d-flex.fd-column.ai-center.fc-black-500.fs-title::text").extract()
@@ -54,7 +55,7 @@ class CaseSpider(scrapy.Spider):
         created = dates[1][39:58]
         modified = dates[3][62:82]
 
-
+        # TODO: fix parsing
         #iterates through all the lines for all the comments
         #since there will be more than one line per comment, this for loop will be O(n) where n >= number of comments
         for item in zip(words):
@@ -73,6 +74,10 @@ class CaseSpider(scrapy.Spider):
         #since \r\n doesn't exist for the last comment, need to do it one more time
         fullDoc.append(comment)
 
+        allComments = ""
+
+        for word in fullDoc:
+            allComments += word
 
         #for loop for votes and probably other stuff later
         #THIS FOR LOOP IS OF A DIFFERENT SIZE THAN THE FOR LOOP FOR THE WORDS
@@ -103,19 +108,19 @@ class CaseSpider(scrapy.Spider):
 
         #going to do the scraped info yield here
         i = 0
-        for item in fullDoc:
-            scraped_info = {
-                'title' : title,
-                'comment' : fullDoc[i],
-                'vote' : voteList[i],
-                'views' : viewCount,
-                'bookmarks' : bookmarkCount,
-                'created' : created,
-                'modified' : modified,
-                'languages' : languages
-            }
-            yield scraped_info
-            i += 1
+#        for item in fullDoc:
+        scraped_info = {
+            'title' : title,
+            'comment' : allComments,
+            'vote' : sum(voteList),
+            'views' : viewCount,
+            'bookmarks' : bookmarkCount,
+            'created' : created,
+            'modified' : modified,
+            'languages' : languages
+        }
+        yield scraped_info
+        i += 1
 
         print("ayo\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
         print(response.url)
