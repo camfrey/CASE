@@ -27,12 +27,8 @@ class CaseSpider(scrapy.Spider):
             yield scrapy.Request(url=next_page, callback=self.parse)
         if(response.url == "https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65"):
             print("here")
-<<<<<<< HEAD
             raise exceptions.CloseSpider('bad url')
             
-=======
-            raise exception.CloseSpider('bad url')
->>>>>>> one_row
 
         titles = response.css(".question-hyperlink::text").extract()
         votes = response.css(".js-vote-count.flex--item.d-flex.fd-column.ai-center.fc-black-500.fs-title::text").extract()
