@@ -3,8 +3,8 @@ import re
 
 class CaseSpider(scrapy.Spider):
     name = 'case'
-    allowed_domains = ['https://stackoverflow.com/questions/72027222/api-usage-local-api-jar-how-do-i-use-a-static-api']
-    start_urls = ['https://stackoverflow.com/questions/72027222/api-usage-local-api-jar-how-do-i-use-a-static-api']
+    allowed_domains = ['https://stackoverflow.com/questions/5']
+    start_urls = ['https://stackoverflow.com/questions/5']
 
     def parse(self, response):
         votes = response.css(".js-vote-count.flex--item.d-flex.fd-column.ai-center.fc-black-500.fs-title::text").extract()
@@ -26,15 +26,15 @@ class CaseSpider(scrapy.Spider):
         bookmarkCount = 0
         if bookmarks:
             bookmarkCount = int(bookmarks[0])
-        print("BOOKMARKS: ",bookmarkCount)
+        #print("BOOKMARKS: ",bookmarkCount)
 
 
         #gets number of views on the post
-        print("AYOOOOOO",views[2][52:57])
+        #print("AYOOOOOO",views[2][52:57])
         viewCount = views[2][52:57]
         viewCount = re.sub("[^0-9]", "", viewCount)
         viewCount = int(viewCount)
-        print(viewCount)
+        #print(viewCount)
 
 
         #gets creation date and last modified date
@@ -46,14 +46,13 @@ class CaseSpider(scrapy.Spider):
         #since there will be more than one line per comment, this for loop will be O(n) where n >= number of comments
         for item in zip(words):
             #create a dictionary to store the scraped info
-            print("here: ",item[0])
+            #print("here: ",item[0])
             if(item[0] == "\r\n"):
                 #\r\n signifies the start of a new comment, and thus it will be a way of parsing  all but the last comment
-                print("FORTNITE")
-                print("heres comment: ",comment)
-                print("MITSKIMITSKIMITSKI")
+                #print("FORTNITE")
+                #print("heres comment: ",comment)
+                #print("MITSKIMITSKIMITSKI")
                 fullDoc.append(comment)
-                rnCounter += 1
                 comment = ""
             else:
                 comment += item[0]
@@ -75,16 +74,16 @@ class CaseSpider(scrapy.Spider):
         #the only class that I found to work to get the tags
         #will list the list of tags twice, so we must
         #only iterate through half the length of the list
-        print("SIZE OF TAGS: ",len(tags))
+        #print("SIZE OF TAGS: ",len(tags))
         tagLength = len(tags)
         i = 0
         for item in zip(tags):
             if(i >= tagLength / 2):
                 break
-            print(item)
+            #print(item)
             stripped = re.sub(r'[^a-zA-Z0-9]', '', str(item))
             if(stripped in allLanguages):
-                print("APPENDED: ",stripped)
+                #print("APPENDED: ",stripped)
                 languages += stripped + " "
             i += 1
 
