@@ -112,7 +112,7 @@ class CaseSpider(scrapy.Spider):
         scraped_info = {
             'title' : title,
             'comment' : allComments,
-            'vote' : sum(voteList),
+            'vote' : voteList,
             'views' : viewCount,
             'bookmarks' : bookmarkCount,
             'created' : created,
