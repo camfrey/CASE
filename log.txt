@@ -1,0 +1,69 @@
+RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c
+url length:  6
+urlVal:  4
+next page attempted at end:  https://stackoverflow.com/questions/5
+RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/5
+url length:  7
+urlVal:  5
+DUPLICATE DETECTED
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/6
+RESPONSEURL:  https://stackoverflow.com/questions/6/why-did-the-width-collapse-in-the-percentage-width-child-element-in-an-absolutel
+url length:  6
+urlVal:  6
+next page attempted at end:  https://stackoverflow.com/questions/7
+RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/7
+url length:  7
+urlVal:  7
+DUPLICATE DETECTED
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/8
+RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c
+url length:  6
+urlVal:  8
+next page attempted at end:  https://stackoverflow.com/questions/9
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday
+url length:  6
+urlVal:  9
+next page attempted at end:  https://stackoverflow.com/questions/10
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/10
+url length:  7
+urlVal:  10
+DUPLICATE DETECTED
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/11
+RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp
+url length:  6
+urlVal:  11
+next page attempted at end:  https://stackoverflow.com/questions/12
+RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp/12
+url length:  7
+urlVal:  12
+DUPLICATE DETECTED
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/13
+RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone
+url length:  6
+urlVal:  13
+next page attempted at end:  https://stackoverflow.com/questions/14
+RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate
+url length:  6
+urlVal:  14
+next page attempted at end:  https://stackoverflow.com/questions/15
+RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate/15
+url length:  7
+urlVal:  15
+DUPLICATE DETECTED
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/16
+RESPONSEURL:  https://stackoverflow.com/questions/16/filling-a-dataset-or-a-datatable-from-a-linq-query-result-set
+url length:  6
+urlVal:  16
+next page attempted at end:  https://stackoverflow.com/questions/17
+RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql
+url length:  6
+urlVal:  17
+next page attempted at end:  https://stackoverflow.com/questions/18
+RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql/18
+url length:  7
+urlVal:  18
+DUPLICATE DETECTED
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/19
+RESPONSEURL:  https://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%cf%80
+url length:  6
+urlVal:  19

@@ -2,29 +2,34 @@ from logging import exception
 import scrapy
 import re
 
-urlVal = 5
+urlVal = 8
 
 class CaseSpider(scrapy.Spider):
     name = 'case'
     allowed_domains = ['stackoverflow.com']
-    start_urls = ['https://stackoverflow.com/questions/4']
+    start_urls = ['https://stackoverflow.com/questions/8']
 
     def parse(self, response):
+        print("hi\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
         global urlVal
+        print("here\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+        print("response status: ",response.status)
 
         #detect duplicate pages by checking urlVal number and what the actual URL number is
-        print("RESPONSE\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
         print("RESPONSEURL: ",response.url)
         parseUrl = response.url.split("/")
-        print(len(parseUrl))
+        print("url length: ",len(parseUrl))
+        print("urlVal: ",urlVal)
         if(len(parseUrl) > 6):
             print("DUPLICATE DETECTED")
             urlVal += 1
-            if(urlVal >= 200):
+            if(urlVal >= 20):
                 raise exceptions.CloseSpider('limit reached')
             next_page = "https://stackoverflow.com/questions/" + str(urlVal)
-            print(next_page)
+            print("duplicate was detected, going to try to go next to: ",next_page)
             yield scrapy.Request(url=next_page, callback=self.parse)
+            return
+            print("after yield")
         if(response.url == "https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65"):
             print("here")
             raise exceptions.CloseSpider('bad url')
@@ -138,12 +143,9 @@ class CaseSpider(scrapy.Spider):
         yield scraped_info
         i += 1
 
-        print("ayo\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-        print(response.url)
         urlVal += 1
-        print(urlVal)
-        if(urlVal < 200):
+        if(urlVal < 20):
             next_page = "https://stackoverflow.com/questions/" + str(urlVal)
-            print(next_page)
+            print("next page attempted at end: ",next_page)
             yield scrapy.Request(url=next_page, callback=self.parse)
 
