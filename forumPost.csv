@@ -1,39 +1,351 @@
-comment,vote,views,bookmarks,created,modified
+comment,vote,views,bookmarks,created,modified,languages
 "
                 
-I have a tag and I want to get all the text inside available. I am doing this:
+The task is to reverse a linked list, so I build the linked list, then print is out, then all the reverse function, then print it our second time. However, the second print is empty. I think it is pointer issues here, any one can explain? thanks.
 
-response.css('mytag::text')
+void reverseLinkedList(struct node** head) {
+    struct node* curr, *prev, *temp;
+
+    curr = *head;
+    prev = NULL;
+
+    while (curr) {
+        temp = prev;
+        prev = curr;        
+        curr = curr->next;
+        prev = temp;
+    }
+    *head = prev;
+}
+
+struct node* buildLinkedList(int list[], int len) {
+    struct node* head = NULL;
+    struct node* tail = NULL;
+    struct node* node;
+    int i;
+
+    for (i = 0; i < len; i++) {
+        node = (struct node*) malloc(sizeof(struct node));
+        node->data = list[i];
+        node->next = NULL;
+
+        if (!head) {
+            head = node;
+        } else {
+            tail->next = node;
+        }
+        tail = node;
+    }
+    return head;
+}
+
+void printLinkedList(struct node** head) {
+    struct node* s = *head;
+    while(s) {
+        printf(""%d\t"", s->data);
+        s = s->next;
+    }
+    printf(""\n"");
+}
+
+int main() {
+    int list [6] = {6,7,8,3,4,5};
+    struct node* header = NULL;
+    header = buildLinkedList(list, 6);
+    printLinkedList(&header);
+    reverseLinkedList(&header);
+    printLinkedList(&header);
+
+}
 
 
-But it is only getting the text of the current tag, I also want to get the text from all the inner tags.
+The result I get from console is:
 
-I know I could do something like:
-
-response.xpath('//mytag//text()')
+6       7       8       3       4       5   
 
 
-But I would like to do it with css selectors. How can I achieve this?
-    ",37,2265,8,2016-12-05T23:12:31,2019-04-23 15:44:09Z
-"Get text of only selected node.
+where the second printLinkedList is printing nothing. Wondering where is the problem. Thanks.
+    ",1,520,1,2011-12-11T16:03:24,2011-12-11 16:09:05Z,c 
+"Looking at your function to reverse the list you have 
 
-response.css('mytag::text')
-
-
-Get text of selected node and its child nodes.
-
-response.css('mytag ::text')
-
-
-See the difference between these two versions. The only difference is the space. If there is no space then only text/attributes of current nodes are returned. If there is space then it selects text/attributes of self and child nodes
-
-response.css('h1 a::attr(href)') # only current node attribute
-
-response.css('h1 ::attr(href)') # current node and all child nodes attribute.
-
-    ",14,2265,8,2016-12-05T23:12:31,2019-04-23 15:44:09Z
-"response.css('mytag *::text')
+while (curr) {
+     temp = prev;
+     prev = curr;        
+     curr = curr->next;
+     prev = temp;  // <<-- this resets prev to what it was before.
+}
 
 
-The * will visit all the inner tags of mytag and ::text will get the text of each of them
-    ",56,2265,8,2016-12-05T23:12:31,2019-04-23 15:44:09Z
+you never change the next pointer, but you change prev twice.
+    ",6,520,1,2011-12-11T16:03:24,2011-12-11 16:09:05Z,c 
+comment,vote,views,bookmarks,created,modified,languages
+"
+                
+How do I efficiently append one string to another? Are there any faster alternatives to:
+var1 = ""foo""
+var2 = ""bar""
+var3 = var1 + var2
+
+    ",706,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"Don't prematurely optimize. If you have no reason to believe there's a speed bottleneck caused by string concatenations then just stick with + and +=:
+
+s  = 'foo'
+s += 'bar'
+s += 'baz'
+
+
+That said, if you're aiming for something like Java's StringBuilder, the canonical Python idiom is to add items to a list and then use str.join to concatenate them all at the end:
+
+l = []
+l.append('foo')
+l.append('bar')
+l.append('baz')
+
+s = ''.join(l)
+
+    ",344,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"If you only have one reference to a string and you concatenate another string to the end, CPython now special cases this and tries to extend the string in place.
+
+The end result is that the operation is amortized O(n).
+
+e.g.
+
+s = """"
+for i in range(n):
+    s+=str(i)
+
+
+used to be O(n^2), but now it is O(n).
+
+From the source (bytesobject.c):
+
+void
+PyBytes_ConcatAndDel(register PyObject **pv, register PyObject *w)
+{
+    PyBytes_Concat(pv, w);
+    Py_XDECREF(w);
+}
+
+
+/* The following function breaks the notion that strings are immutable:
+   it changes the size of a string.  We get away with this only if there
+   is only one module referencing the object.  You can also think of it
+   as creating a new string object and destroying the old one, only
+   more efficiently.  In any case, don't use this if the string may
+   already be known to some other part of the code...
+   Note that if there's not enough memory to resize the string, the original
+   string object at *pv is deallocated, *pv is set to NULL, an ""out of
+   memory"" exception is set, and -1 is returned.  Else (on success) 0 is
+   returned, and the value in *pv may or may not be the same as on input.
+   As always, an extra byte is allocated for a trailing \0 byte (newsize
+   does *not* include that), and a trailing \0 byte is stored.
+*/
+
+int
+_PyBytes_Resize(PyObject **pv, Py_ssize_t newsize)
+{
+    register PyObject *v;
+    register PyBytesObject *sv;
+    v = *pv;
+    if (!PyBytes_Check(v) || Py_REFCNT(v) != 1 || newsize < 0) {
+        *pv = 0;
+        Py_DECREF(v);
+        PyErr_BadInternalCall();
+        return -1;
+    }
+    /* XXX UNREF/NEWREF interface should be more symmetrical */
+    _Py_DEC_REFTOTAL;
+    _Py_ForgetReference(v);
+    *pv = (PyObject *)
+        PyObject_REALLOC((char *)v, PyBytesObject_SIZE + newsize);
+    if (*pv == NULL) {
+        PyObject_Del(v);
+        PyErr_NoMemory();
+        return -1;
+    }
+    _Py_NewReference(*pv);
+    sv = (PyBytesObject *) *pv;
+    Py_SIZE(sv) = newsize;
+    sv->ob_sval[newsize] = '\0';
+    sv->ob_shash = -1;          /* invalidate cached hash value */
+    return 0;
+}
+
+
+It's easy enough to verify empirically.
+
+
+$ python -m timeit -s""s=''"" ""for i in xrange(10):s+='a'""
+1000000 loops, best of 3: 1.85 usec per loop
+$ python -m timeit -s""s=''"" ""for i in xrange(100):s+='a'""
+10000 loops, best of 3: 16.8 usec per loop
+$ python -m timeit -s""s=''"" ""for i in xrange(1000):s+='a'""
+10000 loops, best of 3: 158 usec per loop
+$ python -m timeit -s""s=''"" ""for i in xrange(10000):s+='a'""
+1000 loops, best of 3: 1.71 msec per loop
+$ python -m timeit -s""s=''"" ""for i in xrange(100000):s+='a'""
+10 loops, best of 3: 14.6 msec per loop
+$ python -m timeit -s""s=''"" ""for i in xrange(1000000):s+='a'""
+10 loops, best of 3: 173 msec per loop
+
+
+It's important however to note that this optimisation isn't part of the Python spec. It's only in the cPython implementation as far as I know. The same empirical testing on pypy or jython for example might show the older O(n**2) performance .
+
+
+$ pypy -m timeit -s""s=''"" ""for i in xrange(10):s+='a'""
+10000 loops, best of 3: 90.8 usec per loop
+$ pypy -m timeit -s""s=''"" ""for i in xrange(100):s+='a'""
+1000 loops, best of 3: 896 usec per loop
+$ pypy -m timeit -s""s=''"" ""for i in xrange(1000):s+='a'""
+100 loops, best of 3: 9.03 msec per loop
+$ pypy -m timeit -s""s=''"" ""for i in xrange(10000):s+='a'""
+10 loops, best of 3: 89.5 msec per loop
+
+
+So far so good, but then,
+
+
+$ pypy -m timeit -s""s=''"" ""for i in xrange(100000):s+='a'""
+10 loops, best of 3: 12.8 sec per loop
+
+
+ouch even worse than quadratic. So pypy is doing something that works well with short strings, but performs poorly for larger strings.
+    ",730,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"str1 = ""Hello""
+str2 = ""World""
+newstr = "" "".join((str1, str2))
+
+
+That joins str1 and str2 with a space as separators. You can also do """".join(str1, str2, ...). str.join() takes an iterable, so you'd have to put the strings in a list or a tuple.
+
+That's about as efficient as it gets for a builtin method.
+    ",56,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"Python 3.6 gives us f-strings, which are a delight:
+
+var1 = ""foo""
+var2 = ""bar""
+var3 = f""{var1}{var2}""
+print(var3)                       # prints foobar
+
+
+You can do most anything inside the curly braces
+
+print(f""1 + 1 == {1 + 1}"")        # prints 1 + 1 == 2
+
+    ",25,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"a='foo'
+b='baaz'
+
+a.__add__(b)
+
+out: 'foobaaz'
+
+    ",2,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"If you need to do many append operations to build a large string, you can use StringIO or cStringIO. The interface is like a file. ie: you write to append text to it.
+
+If you're just appending two strings then just use +.
+    ",12,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"Append strings with the add function:
+str1 = ""Hello""
+str2 = "" World""
+str3 = str1.__add__(str2)
+print(str3)
+
+Output:
+Hello World
+
+    ",5,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"Basically, no difference. The only consistent trend is that Python seems to be getting slower with every version... :(
+
+
+
+List
+
+%%timeit
+x = []
+for i in range(100000000):  # xrange on Python 2.7
+    x.append('a')
+x = ''.join(x)
+
+
+Python 2.7
+
+
+  1 loop, best of 3: 7.34 s per loop
+
+
+Python 3.4
+
+
+  1 loop, best of 3: 7.99 s per loop
+
+
+Python 3.5
+
+
+  1 loop, best of 3: 8.48 s per loop
+
+
+Python 3.6
+
+
+  1 loop, best of 3: 9.93 s per loop
+
+
+
+
+String
+
+%%timeit
+x = ''
+for i in range(100000000):  # xrange on Python 2.7
+    x += 'a'
+
+
+Python 2.7: 
+
+
+  1 loop, best of 3: 7.41 s per loop
+
+
+Python 3.4
+
+
+  1 loop, best of 3: 9.08 s per loop
+
+
+Python 3.5
+
+
+  1 loop, best of 3: 8.82 s per loop
+
+
+Python 3.6
+
+
+  1 loop, best of 3: 9.24 s per loop
+
+    ",6,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"it really depends on your application. If you're looping through hundreds of words and want to append them all into a list, .join() is better. But if you're putting together a long sentence, you're better off using +=.
+    ",10,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"Don't.
+
+That is, for most cases you are better off generating the whole string in one go rather then appending to an existing string.
+
+For example, don't do: obj1.name + "":"" + str(obj1.count)
+
+Instead: use ""%s:%d"" % (obj1.name, obj1.count)
+
+That will be easier to read and more efficient.
+    ",37,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+"One other option is to use .format as following:
+print(""{}{}"".format(var1, var2))
+
+    ",0,2153,126,2010-12-14T01:41:29,2022-03-31 12:10:16Z,python 
+comment,vote,views,bookmarks,created,modified,languages
+"
+                
+Title says it all. I was given an API.jar and I need to use it for my Project.
+How do I include the API in my html/css/javascript Project? (no PHP allowed for some reason)
+Thanks in advance!
+    ",0,11,0,2022-04-27T10:29:45,2022-04-27 10:29:45Z,javascript java html 
