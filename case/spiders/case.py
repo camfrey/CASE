@@ -6,12 +6,28 @@ urlVal = 5
 class CaseSpider(scrapy.Spider):
     name = 'case'
     allowed_domains = ['stackoverflow.com']
-    start_urls = ['https://stackoverflow.com/questions/5']
+    start_urls = ['https://stackoverflow.com/questions/4']
 
     def parse(self, response):
+        global urlVal
+
+        #detect duplicate pages by checking urlVal number and what the actual URL number is
+        print("RESPONSE\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+        print("RESPONSEURL: ",response.url)
+        parseUrl = response.url.split("/")
+        print(len(parseUrl))
+        if(len(parseUrl) > 6):
+            print("DUPLICATE DETECTED")
+            urlVal += 1
+            if(urlVal >= 200):
+                raise exceptions.CloseSpider('limit reached')
+            next_page = "https://stackoverflow.com/questions/" + str(urlVal)
+            print(next_page)
+            yield scrapy.Request(url=next_page, callback=self.parse)
         if(response.url == "https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65"):
             print("here")
             raise exceptions.CloseSpider('bad url')
+            
 
         titles = response.css(".question-hyperlink::text").extract()
         votes = response.css(".js-vote-count.flex--item.d-flex.fd-column.ai-center.fc-black-500.fs-title::text").extract()
@@ -119,8 +135,7 @@ class CaseSpider(scrapy.Spider):
 
         print("ayo\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
         print(response.url)
-        global urlVal
-        urlVal += 30
+        urlVal += 1
         print(urlVal)
         if(urlVal < 200):
             next_page = "https://stackoverflow.com/questions/" + str(urlVal)
