@@ -12,6 +12,8 @@ class CaseSpider(scrapy.Spider):
         if(response.url == "https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65"):
             print("here")
             raise exceptions.CloseSpider('bad url')
+
+        titles = response.css(".question-hyperlink::text").extract()
         votes = response.css(".js-vote-count.flex--item.d-flex.fd-column.ai-center.fc-black-500.fs-title::text").extract()
         words = response.css(".s-prose.js-post-body *::text").extract()
         dates = response.css(".flex--item.ws-nowrap.mr16.mb8 *").extract()
@@ -25,6 +27,12 @@ class CaseSpider(scrapy.Spider):
         voteList = []
         allLanguages = {'javascript','python','java','c#','php','html',"c++","css","sql","r",'c',"swift","ruby","xml","vba","typescript","bash","scala","powershell","matlab","kotlin","perl","dart","go","haskell","rust"}
         languages = ""
+
+
+        #gets title
+        title = titles[0]
+        #print("TITLE: ",title)
+        #print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 
         #gets number of bookmarks on the post
@@ -97,6 +105,7 @@ class CaseSpider(scrapy.Spider):
         i = 0
         for item in fullDoc:
             scraped_info = {
+                'title' : title,
                 'comment' : fullDoc[i],
                 'vote' : voteList[i],
                 'views' : viewCount,
