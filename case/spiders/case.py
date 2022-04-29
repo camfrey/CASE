@@ -8,20 +8,21 @@ class CaseSpider(scrapy.Spider):
     name = 'case'
     allowed_domains = ['stackoverflow.com']
     start_urls = ['https://stackoverflow.com/questions/8']
+    handle_httpstatus_list = [404] #we handle 404's inside the parse function
 
     def parse(self, response):
-        print("hi\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
         global urlVal
-        print("here\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
         print("response status: ",response.status)
 
+
         #detect duplicate pages by checking urlVal number and what the actual URL number is
+        #also detect 404
         print("RESPONSEURL: ",response.url)
         parseUrl = response.url.split("/")
         print("url length: ",len(parseUrl))
         print("urlVal: ",urlVal)
-        if(len(parseUrl) > 6):
-            print("DUPLICATE DETECTED")
+        if(len(parseUrl) > 6 or response.status == 404):
+            print("DUPLICATE DETECTED OR 404")
             urlVal += 1
             if(urlVal >= 20):
                 raise exceptions.CloseSpider('limit reached')

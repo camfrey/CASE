@@ -14,6 +14,7 @@ class CaseSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
+    handle_httpstatus_list = [404]
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -32,9 +33,6 @@ class CaseSpiderMiddleware:
     def process_spider_output(self, response, result, spider):
         # Called with the results returned from the Spider, after
         # it has processed the response.
-        if(response.url == "https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65"):
-            print("here")
-            raise exceptions.CloseSpider('bad url')
         # Must return an iterable of Request, or item objects.
         for i in result:
             yield i
@@ -85,13 +83,6 @@ class CaseDownloaderMiddleware:
 
     def process_response(self, request, response, spider):
         # Called with the response returned from the downloader.
-        print("yes\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-        print(response.status)
-        print(response.url)
-        print(request.url)
-
-        if response.status in[301, 302, 303, 307]:
-            print("AYO\n\n\n\n\n\n\n\n\n\n\n\n")
 
         # Must either;
         # - return a Response object
