@@ -1,69 +1,106 @@
-RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c
-url length:  6
-urlVal:  4
-next page attempted at end:  https://stackoverflow.com/questions/5
-RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/5
-url length:  7
-urlVal:  5
-DUPLICATE DETECTED
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/6
-RESPONSEURL:  https://stackoverflow.com/questions/6/why-did-the-width-collapse-in-the-percentage-width-child-element-in-an-absolutel
-url length:  6
-urlVal:  6
-next page attempted at end:  https://stackoverflow.com/questions/7
-RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/7
-url length:  7
-urlVal:  7
-DUPLICATE DETECTED
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/8
-RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c
+response status:  404
+RESPONSEURL:  https://stackoverflow.com/questions/8/how-can-i-convert-visual-j-code-to-c
 url length:  6
 urlVal:  8
-next page attempted at end:  https://stackoverflow.com/questions/9
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/9
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday
 url length:  6
 urlVal:  9
+735935
+<div class="flex--item ws-nowrap mb8" title="Viewed 735,935 times">
+                        <span class="fc-light mr2">Viewed</span>
+                        736k times
+                    </div>
+735935
 next page attempted at end:  https://stackoverflow.com/questions/10
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/10
 url length:  7
 urlVal:  10
-DUPLICATE DETECTED
+DUPLICATE DETECTED OR 404
 duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/11
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp
 url length:  6
 urlVal:  11
+189605
+<div class="flex--item ws-nowrap mb8" title="Viewed 189,605 times">
+                        <span class="fc-light mr2">Viewed</span>
+                        190k times
+                    </div>
+189605
 next page attempted at end:  https://stackoverflow.com/questions/12
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp/12
 url length:  7
 urlVal:  12
-DUPLICATE DETECTED
+DUPLICATE DETECTED OR 404
 duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/13
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone
 url length:  6
 urlVal:  13
+250744
+<div class="flex--item ws-nowrap mb8" title="Viewed 250,744 times">
+                        <span class="fc-light mr2">Viewed</span>
+                        251k times
+                    </div>
+250744
 next page attempted at end:  https://stackoverflow.com/questions/14
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate
 url length:  6
 urlVal:  14
+163240
+<div class="flex--item ws-nowrap mb8" title="Viewed 163,240 times">
+                        <span class="fc-light mr2">Viewed</span>
+                        163k times
+                    </div>
+163240
 next page attempted at end:  https://stackoverflow.com/questions/15
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate/15
 url length:  7
 urlVal:  15
-DUPLICATE DETECTED
+DUPLICATE DETECTED OR 404
 duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/16
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/16/filling-a-dataset-or-a-datatable-from-a-linq-query-result-set
 url length:  6
 urlVal:  16
+86654
+<div class="flex--item ws-nowrap mb8" title="Viewed 86,654 times">
+                        <span class="fc-light mr2">Viewed</span>
+                        87k times
+                    </div>
+86654
 next page attempted at end:  https://stackoverflow.com/questions/17
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql
 url length:  6
 urlVal:  17
+83729
+<div class="flex--item ws-nowrap mb8" title="Viewed 83,729 times">
+                        <span class="fc-light mr2">Viewed</span>
+                        84k times
+                    </div>
+83729
 next page attempted at end:  https://stackoverflow.com/questions/18
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql/18
 url length:  7
 urlVal:  18
-DUPLICATE DETECTED
+DUPLICATE DETECTED OR 404
 duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/19
+response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%cf%80
 url length:  6
 urlVal:  19
+64273
+<div class="flex--item ws-nowrap mb8" title="Viewed 64,273 times">
+                        <span class="fc-light mr2">Viewed</span>
+                        64k times
+                    </div>
+64273

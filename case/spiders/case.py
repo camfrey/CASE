@@ -30,10 +30,6 @@ class CaseSpider(scrapy.Spider):
             print("duplicate was detected, going to try to go next to: ",next_page)
             yield scrapy.Request(url=next_page, callback=self.parse)
             return
-            print("after yield")
-        if(response.url == "https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65"):
-            print("here")
-            raise exceptions.CloseSpider('bad url')
             
 
         titles = response.css(".question-hyperlink::text").extract()
@@ -54,23 +50,19 @@ class CaseSpider(scrapy.Spider):
 
         #gets title
         title = titles[0]
-        #print("TITLE: ",title)
-        #print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 
         #gets number of bookmarks on the post
         bookmarkCount = 0
         if bookmarks:
             bookmarkCount = int(bookmarks[0])
-        #print("BOOKMARKS: ",bookmarkCount)
 
 
         #gets number of views on the post
-        #print("AYOOOOOO",views[2][52:57])
-        viewCount = views[2][52:57]
+        viewCount = views[2][52:]
+        viewCount = viewCount.split("times")[0]
         viewCount = re.sub("[^0-9]", "", viewCount)
         viewCount = int(viewCount)
-        #print(viewCount)
 
 
         #gets creation date and last modified date
@@ -120,10 +112,8 @@ class CaseSpider(scrapy.Spider):
         for item in zip(tags):
             if(i >= tagLength / 2):
                 break
-            #print(item)
             stripped = re.sub(r'[^a-zA-Z0-9]', '', str(item))
             if(stripped in allLanguages):
-                #print("APPENDED: ",stripped)
                 languages += stripped + " "
             i += 1
 
