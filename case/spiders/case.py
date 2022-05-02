@@ -3,6 +3,8 @@ import scrapy
 import re
 
 urlVal = 8
+pageNum = 1
+
 
 class CaseSpider(scrapy.Spider):
     name = 'case'
@@ -12,8 +14,10 @@ class CaseSpider(scrapy.Spider):
 
     def parse(self, response):
         global urlVal
+        global pageNum
         print("response status: ",response.status)
 
+        #response.css(".s-post-summary--content-title .s-link").extract()
 
         #detect duplicate pages by checking urlVal number and what the actual URL number is
         #also detect 404
@@ -24,11 +28,11 @@ class CaseSpider(scrapy.Spider):
         if(len(parseUrl) > 6 or response.status == 404):
             print("DUPLICATE DETECTED OR 404")
             urlVal += 1
-            if(urlVal >= 20):
+            if(urlVal >= 200):
                 raise exceptions.CloseSpider('limit reached')
             next_page = "https://stackoverflow.com/questions/" + str(urlVal)
             print("duplicate was detected, going to try to go next to: ",next_page)
-            yield scrapy.Request(url=next_page, callback=self.parse)
+            yield scrapy.Request(url=next_page, callback=self.parse,dont_filter = True)
             return
             
 
@@ -135,8 +139,8 @@ class CaseSpider(scrapy.Spider):
         i += 1
 
         urlVal += 1
-        if(urlVal < 20):
+        if(urlVal < 200):
             next_page = "https://stackoverflow.com/questions/" + str(urlVal)
             print("next page attempted at end: ",next_page)
-            yield scrapy.Request(url=next_page, callback=self.parse)
+            yield scrapy.Request(url=next_page, callback=self.parse,dont_filter = True)
 

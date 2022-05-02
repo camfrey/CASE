@@ -8,12 +8,6 @@ response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday
 url length:  6
 urlVal:  9
-735935
-<div class="flex--item ws-nowrap mb8" title="Viewed 735,935 times">
-                        <span class="fc-light mr2">Viewed</span>
-                        736k times
-                    </div>
-735935
 next page attempted at end:  https://stackoverflow.com/questions/10
 response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/10
@@ -25,12 +19,6 @@ response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp
 url length:  6
 urlVal:  11
-189605
-<div class="flex--item ws-nowrap mb8" title="Viewed 189,605 times">
-                        <span class="fc-light mr2">Viewed</span>
-                        190k times
-                    </div>
-189605
 next page attempted at end:  https://stackoverflow.com/questions/12
 response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp/12
@@ -42,23 +30,11 @@ response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone
 url length:  6
 urlVal:  13
-250744
-<div class="flex--item ws-nowrap mb8" title="Viewed 250,744 times">
-                        <span class="fc-light mr2">Viewed</span>
-                        251k times
-                    </div>
-250744
 next page attempted at end:  https://stackoverflow.com/questions/14
 response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate
 url length:  6
 urlVal:  14
-163240
-<div class="flex--item ws-nowrap mb8" title="Viewed 163,240 times">
-                        <span class="fc-light mr2">Viewed</span>
-                        163k times
-                    </div>
-163240
 next page attempted at end:  https://stackoverflow.com/questions/15
 response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate/15
@@ -70,23 +46,11 @@ response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/16/filling-a-dataset-or-a-datatable-from-a-linq-query-result-set
 url length:  6
 urlVal:  16
-86654
-<div class="flex--item ws-nowrap mb8" title="Viewed 86,654 times">
-                        <span class="fc-light mr2">Viewed</span>
-                        87k times
-                    </div>
-86654
 next page attempted at end:  https://stackoverflow.com/questions/17
 response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql
 url length:  6
 urlVal:  17
-83729
-<div class="flex--item ws-nowrap mb8" title="Viewed 83,729 times">
-                        <span class="fc-light mr2">Viewed</span>
-                        84k times
-                    </div>
-83729
 next page attempted at end:  https://stackoverflow.com/questions/18
 response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql/18
@@ -98,9 +62,687 @@ response status:  200
 RESPONSEURL:  https://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%cf%80
 url length:  6
 urlVal:  19
-64273
-<div class="flex--item ws-nowrap mb8" title="Viewed 64,273 times">
-                        <span class="fc-light mr2">Viewed</span>
-                        64k times
-                    </div>
-64273
+next page attempted at end:  https://stackoverflow.com/questions/20
+response status:  404
+RESPONSEURL:  https://stackoverflow.com/questions/8/how-can-i-convert-visual-j-code-to-c/20
+url length:  7
+urlVal:  20
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/21
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/21
+url length:  7
+urlVal:  21
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/22
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/22
+url length:  7
+urlVal:  22
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/23
+response status:  404
+RESPONSEURL:  https://stackoverflow.com/questions/23/latest-information-on-php-upcoming-releases
+url length:  6
+urlVal:  23
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/24
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/24/throw-an-error-preventing-a-table-update-in-a-mysql-trigger
+url length:  6
+urlVal:  24
+next page attempted at end:  https://stackoverflow.com/questions/25
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os
+url length:  6
+urlVal:  25
+next page attempted at end:  https://stackoverflow.com/questions/26
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql/26
+url length:  7
+urlVal:  26
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/27
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp/27
+url length:  7
+urlVal:  27
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/28
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone/28
+url length:  7
+urlVal:  28
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/29
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone/29
+url length:  7
+urlVal:  29
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/30
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/30
+url length:  7
+urlVal:  30
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/31
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/6/why-did-the-width-collapse-in-the-percentage-width-child-element-in-an-absolutel/31
+url length:  7
+urlVal:  31
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/32
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/32
+url length:  7
+urlVal:  32
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/33
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate/33
+url length:  7
+urlVal:  33
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/34
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3
+url length:  6
+urlVal:  34
+next page attempted at end:  https://stackoverflow.com/questions/35
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/35
+url length:  7
+urlVal:  35
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/36
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table
+url length:  6
+urlVal:  36
+next page attempted at end:  https://stackoverflow.com/questions/37
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/37
+url length:  7
+urlVal:  37
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/38
+response status:  404
+RESPONSEURL:  https://stackoverflow.com/questions/38/reliable-timer-in-a-console-application
+url length:  6
+urlVal:  38
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/39
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application
+url length:  6
+urlVal:  39
+next page attempted at end:  https://stackoverflow.com/questions/40
+response status:  404
+RESPONSEURL:  https://stackoverflow.com/questions/40/how-to-properly-configure-structuremap-for-concrete-types
+url length:  6
+urlVal:  40
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/41
+response status:  404
+RESPONSEURL:  https://stackoverflow.com/questions/23/latest-information-on-php-upcoming-releases/41
+url length:  7
+urlVal:  41
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/42
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/42/best-way-to-allow-plugins-for-a-php-application
+url length:  6
+urlVal:  42
+next page attempted at end:  https://stackoverflow.com/questions/43
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/43
+url length:  7
+urlVal:  43
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/44
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application/44
+url length:  7
+urlVal:  44
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/45
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application/45
+url length:  7
+urlVal:  45
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/46
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/46
+url length:  7
+urlVal:  46
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/47
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table/47
+url length:  7
+urlVal:  47
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/48
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/48/multiple-submit-buttons-in-an-html-form
+url length:  6
+urlVal:  48
+next page attempted at end:  https://stackoverflow.com/questions/49
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/24/throw-an-error-preventing-a-table-update-in-a-mysql-trigger/49
+url length:  7
+urlVal:  49
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/50
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/16/filling-a-dataset-or-a-datatable-from-a-linq-query-result-set/50
+url length:  7
+urlVal:  50
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/51
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table/51
+url length:  7
+urlVal:  51
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/52
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/52
+url length:  7
+urlVal:  52
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/53
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/53
+url length:  7
+urlVal:  53
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/54
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/48/multiple-submit-buttons-in-an-html-form/54
+url length:  7
+urlVal:  54
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/55
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/55
+url length:  7
+urlVal:  55
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/56
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/48/multiple-submit-buttons-in-an-html-form/56
+url length:  7
+urlVal:  56
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/57
+response status:  404
+RESPONSEURL:  https://stackoverflow.com/questions/38/reliable-timer-in-a-console-application/57
+url length:  7
+urlVal:  57
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/58
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/48/multiple-submit-buttons-in-an-html-form/58
+url length:  7
+urlVal:  58
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/59
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/59/how-do-i-get-a-distinct-ordered-list-of-names-from-a-datatable-using-linq
+url length:  6
+urlVal:  59
+next page attempted at end:  https://stackoverflow.com/questions/60
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/60
+url length:  7
+urlVal:  60
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/61
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters
+url length:  6
+urlVal:  61
+next page attempted at end:  https://stackoverflow.com/questions/62
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/59/how-do-i-get-a-distinct-ordered-list-of-names-from-a-datatable-using-linq/62
+url length:  7
+urlVal:  62
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/63
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/63
+url length:  7
+urlVal:  63
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/64
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/64
+url length:  7
+urlVal:  64
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/65
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65
+url length:  7
+urlVal:  65
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/66
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/66/paging-a-collection-with-linq
+url length:  6
+urlVal:  66
+next page attempted at end:  https://stackoverflow.com/questions/67
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table/67
+url length:  7
+urlVal:  67
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/68
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/66/paging-a-collection-with-linq/68
+url length:  7
+urlVal:  68
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/69
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/69
+url length:  7
+urlVal:  69
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/70
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%cf%80/70
+url length:  7
+urlVal:  70
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/71
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%cf%80/71
+url length:  7
+urlVal:  71
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/72
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/72/how-do-i-add-existing-comments-to-rdoc-in-ruby
+url length:  6
+urlVal:  72
+next page attempted at end:  https://stackoverflow.com/questions/73
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/73
+url length:  7
+urlVal:  73
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/74
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/74
+url length:  7
+urlVal:  74
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/75
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/75
+url length:  7
+urlVal:  75
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/76
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/42/best-way-to-allow-plugins-for-a-php-application/76
+url length:  7
+urlVal:  76
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/77
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/42/best-way-to-allow-plugins-for-a-php-application/77
+url length:  7
+urlVal:  77
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/78
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/78
+url length:  7
+urlVal:  78
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/79
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/79/getting-subclipse-in-aptana-to-work-with-the-newest-release-of-subversion
+url length:  6
+urlVal:  79
+next page attempted at end:  https://stackoverflow.com/questions/80
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/80/sqlstatement-execute-multiple-queries-in-one-statement
+url length:  6
+urlVal:  80
+next page attempted at end:  https://stackoverflow.com/questions/81
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/81
+url length:  7
+urlVal:  81
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/82
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table/82
+url length:  7
+urlVal:  82
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/83
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/42/best-way-to-allow-plugins-for-a-php-application/83
+url length:  7
+urlVal:  83
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/84
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/16/filling-a-dataset-or-a-datatable-from-a-linq-query-result-set/84
+url length:  7
+urlVal:  84
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/85
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases
+url length:  6
+urlVal:  85
+next page attempted at end:  https://stackoverflow.com/questions/86
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/86
+url length:  7
+urlVal:  86
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/87
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases/87
+url length:  7
+urlVal:  87
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/88
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution
+url length:  6
+urlVal:  88
+next page attempted at end:  https://stackoverflow.com/questions/89
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/79/getting-subclipse-in-aptana-to-work-with-the-newest-release-of-subversion/89
+url length:  7
+urlVal:  89
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/90
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/90/how-do-you-branch-and-merge-with-tortoisesvn
+url length:  6
+urlVal:  90
+next page attempted at end:  https://stackoverflow.com/questions/91
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/90/how-do-you-branch-and-merge-with-tortoisesvn/91
+url length:  7
+urlVal:  91
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/92
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/90/how-do-you-branch-and-merge-with-tortoisesvn/92
+url length:  7
+urlVal:  92
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/93
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution/93
+url length:  7
+urlVal:  93
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/94
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/90/how-do-you-branch-and-merge-with-tortoisesvn/94
+url length:  7
+urlVal:  94
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/95
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone/95
+url length:  7
+urlVal:  95
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/96
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution/96
+url length:  7
+urlVal:  96
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/97
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases/97
+url length:  7
+urlVal:  97
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/98
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution/98
+url length:  7
+urlVal:  98
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/99
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution/99
+url length:  7
+urlVal:  99
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/100
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases/100
+url length:  7
+urlVal:  100
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/101
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases/101
+url length:  7
+urlVal:  101
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/102
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/24/throw-an-error-preventing-a-table-update-in-a-mysql-trigger/102
+url length:  7
+urlVal:  102
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/103
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone/103
+url length:  7
+urlVal:  103
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/104
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/104/anatomy-of-a-memory-leak
+url length:  6
+urlVal:  104
+next page attempted at end:  https://stackoverflow.com/questions/105
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/105
+url length:  7
+urlVal:  105
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/106
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql/106
+url length:  7
+urlVal:  106
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/107
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/104/anatomy-of-a-memory-leak/107
+url length:  7
+urlVal:  107
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/108
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit
+url length:  6
+urlVal:  108
+next page attempted at end:  https://stackoverflow.com/questions/109
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/109/decoding-t-sql-cast-in-c-vb-net
+url length:  6
+urlVal:  109
+next page attempted at end:  https://stackoverflow.com/questions/110
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/104/anatomy-of-a-memory-leak/110
+url length:  7
+urlVal:  110
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/111
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/111
+url length:  7
+urlVal:  111
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/112
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/104/anatomy-of-a-memory-leak/112
+url length:  7
+urlVal:  112
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/113
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/113
+url length:  7
+urlVal:  113
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/114
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/114
+url length:  7
+urlVal:  114
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/115
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/115
+url length:  7
+urlVal:  115
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/116
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/116
+url length:  7
+urlVal:  116
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/117
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/117
+url length:  7
+urlVal:  117
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/118
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/118
+url length:  7
+urlVal:  118
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/119
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/109/decoding-t-sql-cast-in-c-vb-net/119
+url length:  7
+urlVal:  119
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/120
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/120/asp-net-site-maps
+url length:  6
+urlVal:  120
+next page attempted at end:  https://stackoverflow.com/questions/121
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/121
+url length:  7
+urlVal:  121
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/122
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/109/decoding-t-sql-cast-in-c-vb-net/122
+url length:  7
+urlVal:  122
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/123
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/123/java-lib-or-app-to-convert-csv-to-xml-file
+url length:  6
+urlVal:  123
+next page attempted at end:  https://stackoverflow.com/questions/124
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/80/sqlstatement-execute-multiple-queries-in-one-statement/124
+url length:  7
+urlVal:  124
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/125
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/120/asp-net-site-maps/125
+url length:  7
+urlVal:  125
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/126
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method
+url length:  6
+urlVal:  126
+next page attempted at end:  https://stackoverflow.com/questions/127
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method/127
+url length:  7
+urlVal:  127
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/128
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method/128
+url length:  7
+urlVal:  128
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/129
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/129/how-to-export-data-from-sql-server-2005-to-mysql
+url length:  6
+urlVal:  129
+next page attempted at end:  https://stackoverflow.com/questions/130
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/129/how-to-export-data-from-sql-server-2005-to-mysql/130
+url length:  7
+urlVal:  130
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/131
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method/131
+url length:  7
+urlVal:  131
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/132
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method/132
+url length:  7
+urlVal:  132
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/133
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/123/java-lib-or-app-to-convert-csv-to-xml-file/133
+url length:  7
+urlVal:  133
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/134
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/134/xsd-datasets-and-ignoring-foreign-keys
+url length:  6
+urlVal:  134
+next page attempted at end:  https://stackoverflow.com/questions/135
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/129/how-to-export-data-from-sql-server-2005-to-mysql/135
+url length:  7
+urlVal:  135
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/136
+response status:  200
+RESPONSEURL:  https://serverfault.com/questions/62240/is-there-a-site-that-can-track-all-the-domain-names-i-own
+url length:  6
+urlVal:  136
+next page attempted at end:  https://stackoverflow.com/questions/137
+response status:  200
+RESPONSEURL:  https://stackoverflow.com/questions/120/asp-net-site-maps/137
+url length:  7
+urlVal:  137
+DUPLICATE DETECTED OR 404
+duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/138
