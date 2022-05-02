@@ -1,748 +1,411 @@
-response status:  404
-RESPONSEURL:  https://stackoverflow.com/questions/8/how-can-i-convert-visual-j-code-to-c
-url length:  6
-urlVal:  8
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/9
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday
-url length:  6
-urlVal:  9
-next page attempted at end:  https://stackoverflow.com/questions/10
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/10
-url length:  7
-urlVal:  10
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/11
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp
-url length:  6
-urlVal:  11
-next page attempted at end:  https://stackoverflow.com/questions/12
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp/12
-url length:  7
-urlVal:  12
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/13
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone
-url length:  6
-urlVal:  13
-next page attempted at end:  https://stackoverflow.com/questions/14
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate
-url length:  6
-urlVal:  14
-next page attempted at end:  https://stackoverflow.com/questions/15
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate/15
-url length:  7
-urlVal:  15
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/16
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/16/filling-a-dataset-or-a-datatable-from-a-linq-query-result-set
-url length:  6
-urlVal:  16
-next page attempted at end:  https://stackoverflow.com/questions/17
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql
-url length:  6
-urlVal:  17
-next page attempted at end:  https://stackoverflow.com/questions/18
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql/18
-url length:  7
-urlVal:  18
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/19
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%cf%80
-url length:  6
-urlVal:  19
-next page attempted at end:  https://stackoverflow.com/questions/20
-response status:  404
-RESPONSEURL:  https://stackoverflow.com/questions/8/how-can-i-convert-visual-j-code-to-c/20
-url length:  7
-urlVal:  20
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/21
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/21
-url length:  7
-urlVal:  21
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/22
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/22
-url length:  7
-urlVal:  22
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/23
-response status:  404
-RESPONSEURL:  https://stackoverflow.com/questions/23/latest-information-on-php-upcoming-releases
-url length:  6
-urlVal:  23
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/24
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/24/throw-an-error-preventing-a-table-update-in-a-mysql-trigger
-url length:  6
-urlVal:  24
-next page attempted at end:  https://stackoverflow.com/questions/25
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os
-url length:  6
-urlVal:  25
-next page attempted at end:  https://stackoverflow.com/questions/26
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql/26
-url length:  7
-urlVal:  26
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/27
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/11/calculate-relative-time-in-c-sharp/27
-url length:  7
-urlVal:  27
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/28
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone/28
-url length:  7
-urlVal:  28
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/29
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone/29
-url length:  7
-urlVal:  29
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/30
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/30
-url length:  7
-urlVal:  30
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/31
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/6/why-did-the-width-collapse-in-the-percentage-width-child-element-in-an-absolutel/31
-url length:  7
-urlVal:  31
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/32
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/32
-url length:  7
-urlVal:  32
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/33
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate/33
-url length:  7
-urlVal:  33
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/34
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3
-url length:  6
-urlVal:  34
-next page attempted at end:  https://stackoverflow.com/questions/35
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/35
-url length:  7
-urlVal:  35
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/36
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table
-url length:  6
-urlVal:  36
-next page attempted at end:  https://stackoverflow.com/questions/37
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/37
-url length:  7
-urlVal:  37
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/38
-response status:  404
-RESPONSEURL:  https://stackoverflow.com/questions/38/reliable-timer-in-a-console-application
-url length:  6
-urlVal:  38
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/39
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application
-url length:  6
-urlVal:  39
-next page attempted at end:  https://stackoverflow.com/questions/40
-response status:  404
-RESPONSEURL:  https://stackoverflow.com/questions/40/how-to-properly-configure-structuremap-for-concrete-types
-url length:  6
-urlVal:  40
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/41
-response status:  404
-RESPONSEURL:  https://stackoverflow.com/questions/23/latest-information-on-php-upcoming-releases/41
-url length:  7
-urlVal:  41
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/42
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/42/best-way-to-allow-plugins-for-a-php-application
-url length:  6
-urlVal:  42
-next page attempted at end:  https://stackoverflow.com/questions/43
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/43
-url length:  7
-urlVal:  43
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/44
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application/44
-url length:  7
-urlVal:  44
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/45
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application/45
-url length:  7
-urlVal:  45
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/46
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/46
-url length:  7
-urlVal:  46
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/47
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table/47
-url length:  7
-urlVal:  47
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/48
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/48/multiple-submit-buttons-in-an-html-form
-url length:  6
-urlVal:  48
-next page attempted at end:  https://stackoverflow.com/questions/49
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/24/throw-an-error-preventing-a-table-update-in-a-mysql-trigger/49
-url length:  7
-urlVal:  49
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/50
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/16/filling-a-dataset-or-a-datatable-from-a-linq-query-result-set/50
-url length:  7
-urlVal:  50
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/51
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table/51
-url length:  7
-urlVal:  51
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/52
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/52
-url length:  7
-urlVal:  52
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/53
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/53
-url length:  7
-urlVal:  53
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/54
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/48/multiple-submit-buttons-in-an-html-form/54
-url length:  7
-urlVal:  54
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/55
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/55
-url length:  7
-urlVal:  55
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/56
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/48/multiple-submit-buttons-in-an-html-form/56
-url length:  7
-urlVal:  56
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/57
-response status:  404
-RESPONSEURL:  https://stackoverflow.com/questions/38/reliable-timer-in-a-console-application/57
-url length:  7
-urlVal:  57
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/58
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/48/multiple-submit-buttons-in-an-html-form/58
-url length:  7
-urlVal:  58
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/59
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/59/how-do-i-get-a-distinct-ordered-list-of-names-from-a-datatable-using-linq
-url length:  6
-urlVal:  59
-next page attempted at end:  https://stackoverflow.com/questions/60
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/60
-url length:  7
-urlVal:  60
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/61
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters
-url length:  6
-urlVal:  61
-next page attempted at end:  https://stackoverflow.com/questions/62
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/59/how-do-i-get-a-distinct-ordered-list-of-names-from-a-datatable-using-linq/62
-url length:  7
-urlVal:  62
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/63
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/63
-url length:  7
-urlVal:  63
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/64
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/64
-url length:  7
-urlVal:  64
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/65
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/61/microsoft-office-2007-file-type-mime-types-and-identifying-characters/65
-url length:  7
-urlVal:  65
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/66
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/66/paging-a-collection-with-linq
-url length:  6
-urlVal:  66
-next page attempted at end:  https://stackoverflow.com/questions/67
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table/67
-url length:  7
-urlVal:  67
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/68
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/66/paging-a-collection-with-linq/68
-url length:  7
-urlVal:  68
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/69
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/69
-url length:  7
-urlVal:  69
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/70
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%cf%80/70
-url length:  7
-urlVal:  70
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/71
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/19/what-is-the-fastest-way-to-get-the-value-of-%cf%80/71
-url length:  7
-urlVal:  71
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/72
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/72/how-do-i-add-existing-comments-to-rdoc-in-ruby
-url length:  6
-urlVal:  72
-next page attempted at end:  https://stackoverflow.com/questions/73
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/25/how-to-use-the-c-socket-api-in-c-on-z-os/73
-url length:  7
-urlVal:  73
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/74
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/74
-url length:  7
-urlVal:  74
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/75
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/75
-url length:  7
-urlVal:  75
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/76
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/42/best-way-to-allow-plugins-for-a-php-application/76
-url length:  7
-urlVal:  76
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/77
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/42/best-way-to-allow-plugins-for-a-php-application/77
-url length:  7
-urlVal:  77
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/78
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/78
-url length:  7
-urlVal:  78
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/79
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/79/getting-subclipse-in-aptana-to-work-with-the-newest-release-of-subversion
-url length:  6
-urlVal:  79
-next page attempted at end:  https://stackoverflow.com/questions/80
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/80/sqlstatement-execute-multiple-queries-in-one-statement
-url length:  6
-urlVal:  80
-next page attempted at end:  https://stackoverflow.com/questions/81
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/34/how-to-unload-a-bytearray-using-actionscript-3/81
-url length:  7
-urlVal:  81
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/82
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/36/check-for-changes-to-an-sql-server-table/82
-url length:  7
-urlVal:  82
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/83
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/42/best-way-to-allow-plugins-for-a-php-application/83
-url length:  7
-urlVal:  83
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/84
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/16/filling-a-dataset-or-a-datatable-from-a-linq-query-result-set/84
-url length:  7
-urlVal:  84
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/85
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases
-url length:  6
-urlVal:  85
-next page attempted at end:  https://stackoverflow.com/questions/86
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/4/how-to-convert-a-decimal-to-a-double-in-c/86
-url length:  7
-urlVal:  86
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/87
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases/87
-url length:  7
-urlVal:  87
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/88
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution
-url length:  6
-urlVal:  88
-next page attempted at end:  https://stackoverflow.com/questions/89
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/79/getting-subclipse-in-aptana-to-work-with-the-newest-release-of-subversion/89
-url length:  7
-urlVal:  89
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/90
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/90/how-do-you-branch-and-merge-with-tortoisesvn
-url length:  6
-urlVal:  90
-next page attempted at end:  https://stackoverflow.com/questions/91
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/90/how-do-you-branch-and-merge-with-tortoisesvn/91
-url length:  7
-urlVal:  91
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/92
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/90/how-do-you-branch-and-merge-with-tortoisesvn/92
-url length:  7
-urlVal:  92
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/93
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution/93
-url length:  7
-urlVal:  93
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/94
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/90/how-do-you-branch-and-merge-with-tortoisesvn/94
-url length:  7
-urlVal:  94
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/95
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone/95
-url length:  7
-urlVal:  95
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/96
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution/96
-url length:  7
-urlVal:  96
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/97
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases/97
-url length:  7
-urlVal:  97
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/98
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution/98
-url length:  7
-urlVal:  98
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/99
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/88/is-gettimeofday-guaranteed-to-be-of-microsecond-resolution/99
-url length:  7
-urlVal:  99
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/100
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases/100
-url length:  7
-urlVal:  100
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/101
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/85/flat-file-databases/101
-url length:  7
-urlVal:  101
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/102
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/24/throw-an-error-preventing-a-table-update-in-a-mysql-trigger/102
-url length:  7
-urlVal:  102
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/103
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/13/determine-a-users-timezone/103
-url length:  7
-urlVal:  103
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/104
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/104/anatomy-of-a-memory-leak
-url length:  6
-urlVal:  104
-next page attempted at end:  https://stackoverflow.com/questions/105
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/105
-url length:  7
-urlVal:  105
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/106
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/17/binary-data-in-mysql/106
-url length:  7
-urlVal:  106
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/107
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/104/anatomy-of-a-memory-leak/107
-url length:  7
-urlVal:  107
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/108
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit
-url length:  6
-urlVal:  108
-next page attempted at end:  https://stackoverflow.com/questions/109
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/109/decoding-t-sql-cast-in-c-vb-net
-url length:  6
-urlVal:  109
-next page attempted at end:  https://stackoverflow.com/questions/110
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/104/anatomy-of-a-memory-leak/110
-url length:  7
-urlVal:  110
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/111
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/111
-url length:  7
-urlVal:  111
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/112
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/104/anatomy-of-a-memory-leak/112
-url length:  7
-urlVal:  112
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/113
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/113
-url length:  7
-urlVal:  113
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/114
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/114
-url length:  7
-urlVal:  114
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/115
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/115
-url length:  7
-urlVal:  115
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/116
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/116
-url length:  7
-urlVal:  116
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/117
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/117
-url length:  7
-urlVal:  117
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/118
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/108/best-subversion-clients-for-windows-vista-64bit/118
-url length:  7
-urlVal:  118
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/119
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/109/decoding-t-sql-cast-in-c-vb-net/119
-url length:  7
-urlVal:  119
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/120
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/120/asp-net-site-maps
-url length:  6
-urlVal:  120
-next page attempted at end:  https://stackoverflow.com/questions/121
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/9/how-do-i-calculate-someones-age-based-on-a-datetime-type-birthday/121
-url length:  7
-urlVal:  121
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/122
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/109/decoding-t-sql-cast-in-c-vb-net/122
-url length:  7
-urlVal:  122
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/123
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/123/java-lib-or-app-to-convert-csv-to-xml-file
-url length:  6
-urlVal:  123
-next page attempted at end:  https://stackoverflow.com/questions/124
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/80/sqlstatement-execute-multiple-queries-in-one-statement/124
-url length:  7
-urlVal:  124
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/125
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/120/asp-net-site-maps/125
-url length:  7
-urlVal:  125
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/126
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method
-url length:  6
-urlVal:  126
-next page attempted at end:  https://stackoverflow.com/questions/127
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method/127
-url length:  7
-urlVal:  127
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/128
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method/128
-url length:  7
-urlVal:  128
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/129
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/129/how-to-export-data-from-sql-server-2005-to-mysql
-url length:  6
-urlVal:  129
-next page attempted at end:  https://stackoverflow.com/questions/130
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/129/how-to-export-data-from-sql-server-2005-to-mysql/130
-url length:  7
-urlVal:  130
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/131
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method/131
-url length:  7
-urlVal:  131
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/132
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method/132
-url length:  7
-urlVal:  132
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/133
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/123/java-lib-or-app-to-convert-csv-to-xml-file/133
-url length:  7
-urlVal:  133
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/134
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/134/xsd-datasets-and-ignoring-foreign-keys
-url length:  6
-urlVal:  134
-next page attempted at end:  https://stackoverflow.com/questions/135
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/129/how-to-export-data-from-sql-server-2005-to-mysql/135
-url length:  7
-urlVal:  135
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/136
-response status:  200
-RESPONSEURL:  https://serverfault.com/questions/62240/is-there-a-site-that-can-track-all-the-domain-names-i-own
-url length:  6
-urlVal:  136
-next page attempted at end:  https://stackoverflow.com/questions/137
-response status:  200
-RESPONSEURL:  https://stackoverflow.com/questions/120/asp-net-site-maps/137
-url length:  7
-urlVal:  137
-DUPLICATE DETECTED OR 404
-duplicate was detected, going to try to go next to:  https://stackoverflow.com/questions/138
+response status:  200
+here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=1
+response status:  200
+in here
+number of posts on this page:  50
+here are the questions: 
+/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
+/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
+/questions/231767/what-does-the-yield-keyword-do
+/questions/477816/what-is-the-correct-json-content-type
+/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
+/questions/348170/how-do-i-undo-git-add-before-commit
+/questions/6591213/how-do-i-rename-a-local-git-branch
+/questions/1642028/what-is-the-operator-in-c-c
+/questions/79923/what-and-where-are-the-stack-and-heap
+/questions/244777/can-comments-be-used-in-json
+/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
+/questions/8318911/why-does-html-think-chucknorris-is-a-color
+/questions/178325/how-do-i-check-if-an-element-is-hidden-in-jquery
+/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
+/questions/1783405/how-do-i-check-out-a-remote-git-branch
+/questions/503093/how-do-i-redirect-to-another-webpage
+/questions/179123/how-to-modify-existing-unpushed-commit-messages
+/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+/questions/111102/how-do-javascript-closures-work
+/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+/questions/419163/what-does-if-name-main-do
+/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
+/questions/336859/var-functionname-function-vs-function-functionname
+/questions/40480/is-java-pass-by-reference-or-pass-by-value
+/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result
+/questions/394809/does-python-have-a-ternary-conditional-operator
+/questions/7074/what-is-the-difference-between-string-and-string-in-c
+/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
+/questions/208105/how-do-i-remove-a-property-from-a-javascript-object
+/questions/100003/what-are-metaclasses-in-python
+/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions
+/questions/14220321/how-to-return-the-response-from-an-asynchronous-call
+/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression-take-union-of-dictionari
+/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp
+/questions/630453/what-is-the-difference-between-post-and-put-in-http
+/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
+/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git
+/questions/826782/how-to-disable-text-selection-highlighting
+/questions/762011/whats-the-difference-between-using-let-and-var
+/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
+/questions/52704/how-do-i-discard-unstaged-changes-in-git
+/questions/89228/how-do-i-execute-a-program-or-call-a-system-command
+/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
+/questions/549/the-definitive-guide-to-form-based-website-authentication
+/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers
+/questions/9329446/for-each-over-an-array-in-javascript
+/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
+next page:  https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
+response status:  200
+here is the pageIndex:  1
+next page:  https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+response status:  200
+here is the pageIndex:  2
+next page:  https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+response status:  200
+here is the pageIndex:  3
+next page:  https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
+response status:  200
+here is the pageIndex:  4
+next page:  https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+response status:  200
+here is the pageIndex:  5
+next page:  https://stackoverflow.com/questions/477816/what-is-the-correct-json-content-type
+response status:  200
+here is the pageIndex:  6
+next page:  https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
+response status:  200
+here is the pageIndex:  7
+next page:  https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit
+response status:  200
+here is the pageIndex:  8
+next page:  https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch
+response status:  200
+here is the pageIndex:  9
+next page:  https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c-c
+response status:  200
+here is the pageIndex:  10
+next page:  https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap
+response status:  200
+here is the pageIndex:  11
+next page:  https://stackoverflow.com/questions/244777/can-comments-be-used-in-json
+response status:  200
+here is the pageIndex:  12
+next page:  https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
+response status:  200
+here is the pageIndex:  13
+next page:  https://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color
+response status:  200
+here is the pageIndex:  14
+next page:  https://stackoverflow.com/questions/178325/how-do-i-check-if-an-element-is-hidden-in-jquery
+response status:  200
+here is the pageIndex:  15
+next page:  https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
+response status:  200
+here is the pageIndex:  16
+next page:  https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch
+response status:  200
+here is the pageIndex:  17
+next page:  https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage
+response status:  200
+here is the pageIndex:  18
+next page:  https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages
+response status:  200
+here is the pageIndex:  19
+next page:  https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+response status:  200
+here is the pageIndex:  20
+next page:  https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+response status:  200
+here is the pageIndex:  21
+next page:  https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+response status:  200
+here is the pageIndex:  22
+next page:  https://stackoverflow.com/questions/419163/what-does-if-name-main-do
+response status:  200
+here is the pageIndex:  23
+next page:  https://stackoverflow.com/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
+response status:  200
+here is the pageIndex:  24
+next page:  https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname
+response status:  200
+here is the pageIndex:  25
+next page:  https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+response status:  200
+here is the pageIndex:  26
+next page:  https://stackoverflow.com/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result
+response status:  200
+here is the pageIndex:  27
+next page:  https://stackoverflow.com/questions/394809/does-python-have-a-ternary-conditional-operator
+response status:  200
+here is the pageIndex:  28
+next page:  https://stackoverflow.com/questions/7074/what-is-the-difference-between-string-and-string-in-c
+response status:  200
+here is the pageIndex:  29
+next page:  https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
+response status:  200
+here is the pageIndex:  30
+next page:  https://stackoverflow.com/questions/208105/how-do-i-remove-a-property-from-a-javascript-object
+response status:  200
+here is the pageIndex:  31
+next page:  https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python
+response status:  200
+here is the pageIndex:  32
+next page:  https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+response status:  200
+here is the pageIndex:  33
+next page:  https://stackoverflow.com/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions
+response status:  200
+here is the pageIndex:  34
+next page:  https://stackoverflow.com/questions/14220321/how-to-return-the-response-from-an-asynchronous-call
+response status:  200
+here is the pageIndex:  35
+next page:  https://stackoverflow.com/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression-take-union-of-dictionari
+response status:  200
+here is the pageIndex:  36
+next page:  https://stackoverflow.com/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp
+response status:  200
+here is the pageIndex:  37
+next page:  https://stackoverflow.com/questions/630453/what-is-the-difference-between-post-and-put-in-http
+response status:  200
+here is the pageIndex:  38
+next page:  https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
+response status:  200
+here is the pageIndex:  39
+next page:  https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git
+response status:  200
+here is the pageIndex:  40
+next page:  https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting
+response status:  200
+here is the pageIndex:  41
+next page:  https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var
+response status:  200
+here is the pageIndex:  42
+next page:  https://stackoverflow.com/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
+response status:  200
+here is the pageIndex:  43
+next page:  https://stackoverflow.com/questions/52704/how-do-i-discard-unstaged-changes-in-git
+response status:  200
+here is the pageIndex:  44
+next page:  https://stackoverflow.com/questions/89228/how-do-i-execute-a-program-or-call-a-system-command
+response status:  200
+here is the pageIndex:  45
+next page:  https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
+response status:  200
+here is the pageIndex:  46
+next page:  https://stackoverflow.com/questions/549/the-definitive-guide-to-form-based-website-authentication
+response status:  200
+here is the pageIndex:  47
+next page:  https://stackoverflow.com/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers
+response status:  200
+here is the pageIndex:  48
+next page:  https://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript
+response status:  200
+here is the pageIndex:  49
+next page:  https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
+response status:  200
+here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=2
+response status:  200
+in here
+number of posts on this page:  50
+here are the questions: 
+/questions/46155/how-can-i-validate-an-email-address-in-javascript
+/questions/215718/how-can-i-reset-or-revert-a-file-to-a-specific-revision
+/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation
+/questions/161813/how-do-i-resolve-merge-conflicts-in-a-git-repository
+/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript
+/questions/273192/how-can-i-safely-create-a-nested-directory
+/questions/1144783/how-to-replace-all-occurrences-of-a-string-in-javascript
+/questions/2765421/how-do-i-push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too
+/questions/38549/what-is-the-difference-between-inner-join-and-outer-join
+/questions/901712/how-do-i-check-whether-a-checkbox-is-checked-in-jquery
+/questions/406230/regular-expression-to-match-a-line-that-doesnt-contain-a-word
+/questions/115983/how-can-i-add-a-blank-directory-to-a-git-repository
+/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
+/questions/3737139/reference-what-does-this-symbol-mean-in-php
+/questions/105034/how-to-create-a-guid-uuid
+/questions/4089430/how-to-determine-the-url-that-a-local-git-repository-was-originally-cloned-from
+/questions/114543/how-to-horizontally-center-an-element
+/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn
+/questions/4456438/how-to-pass-null-a-real-surname-to-a-soap-web-service-in-actionscript-3
+/questions/522563/accessing-the-index-in-for-loops
+/questions/11828270/how-do-i-exit-the-vim-editor
+/questions/237104/how-do-i-check-if-an-array-includes-a-value-in-javascript
+/questions/952914/how-to-make-a-flat-list-out-of-a-list-of-lists
+/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
+/questions/5189560/squash-my-last-x-commits-together-using-git
+/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet
+/questions/67699/how-to-clone-all-remote-branches-in-git
+/questions/14994391/thinking-in-angularjs-if-i-have-a-jquery-background
+/questions/309424/how-do-i-read-convert-an-inputstream-into-a-string-in-java
+/questions/221294/how-do-you-get-a-timestamp-in-javascript
+/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
+/questions/426258/setting-checked-for-a-checkbox-with-jquery
+/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github
+/questions/2669690/why-does-google-prepend-while1-to-their-json-responses
+/questions/134845/which-href-value-should-i-use-for-javascript-links-or-javascriptvoid0
+/questions/271526/avoiding-nullpointerexception-in-java
+/questions/136097/difference-between-staticmethod-and-classmethod
+/questions/5480258/how-to-delete-a-remote-tag
+/questions/388242/the-definitive-c-book-guide-and-list
+/questions/2610497/change-a-html5-inputs-placeholder-color-with-css
+/questions/509211/understanding-slicing
+/questions/1109022/how-to-close-hide-the-android-soft-keyboard-programmatically
+/questions/105372/how-to-enumerate-an-enum
+/questions/16047306/how-is-docker-different-from-a-virtual-machine
+/questions/59838/how-can-i-check-if-a-directory-exists-in-a-bash-shell-script
+/questions/40471/what-are-the-differences-between-a-hashmap-and-a-hashtable-in-java
+/questions/671118/what-exactly-is-restful-programming
+/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
+/questions/14415881/how-can-i-pair-socks-from-a-pile-efficiently
+/questions/1260748/how-do-i-remove-a-submodule
+next page:  https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
+response status:  200
+here is the pageIndex:  1
+next page:  https://stackoverflow.com/questions/215718/how-can-i-reset-or-revert-a-file-to-a-specific-revision
+response status:  200
+here is the pageIndex:  2
+next page:  https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation
+response status:  200
+here is the pageIndex:  3
+next page:  https://stackoverflow.com/questions/161813/how-do-i-resolve-merge-conflicts-in-a-git-repository
+response status:  200
+here is the pageIndex:  4
+next page:  https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript
+response status:  200
+here is the pageIndex:  5
+next page:  https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
+response status:  200
+here is the pageIndex:  6
+next page:  https://stackoverflow.com/questions/1144783/how-to-replace-all-occurrences-of-a-string-in-javascript
+response status:  200
+here is the pageIndex:  7
+next page:  https://stackoverflow.com/questions/2765421/how-do-i-push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too
+response status:  200
+here is the pageIndex:  8
+next page:  https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join
+response status:  200
+here is the pageIndex:  9
+next page:  https://stackoverflow.com/questions/901712/how-do-i-check-whether-a-checkbox-is-checked-in-jquery
+response status:  200
+here is the pageIndex:  10
+next page:  https://stackoverflow.com/questions/406230/regular-expression-to-match-a-line-that-doesnt-contain-a-word
+response status:  200
+here is the pageIndex:  11
+next page:  https://stackoverflow.com/questions/115983/how-can-i-add-a-blank-directory-to-a-git-repository
+response status:  200
+here is the pageIndex:  12
+next page:  https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
+response status:  200
+here is the pageIndex:  13
+next page:  https://stackoverflow.com/questions/3737139/reference-what-does-this-symbol-mean-in-php
+response status:  200
+here is the pageIndex:  14
+next page:  https://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid
+response status:  200
+here is the pageIndex:  15
+next page:  https://stackoverflow.com/questions/4089430/how-to-determine-the-url-that-a-local-git-repository-was-originally-cloned-from
+response status:  200
+here is the pageIndex:  16
+next page:  https://stackoverflow.com/questions/114543/how-to-horizontally-center-an-element
+response status:  200
+here is the pageIndex:  17
+next page:  https://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn
+response status:  200
+here is the pageIndex:  18
+next page:  https://stackoverflow.com/questions/4456438/how-to-pass-null-a-real-surname-to-a-soap-web-service-in-actionscript-3
+response status:  200
+here is the pageIndex:  19
+next page:  https://stackoverflow.com/questions/522563/accessing-the-index-in-for-loops
+response status:  200
+here is the pageIndex:  20
+next page:  https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor
+response status:  200
+here is the pageIndex:  21
+next page:  https://stackoverflow.com/questions/237104/how-do-i-check-if-an-array-includes-a-value-in-javascript
+response status:  200
+here is the pageIndex:  22
+next page:  https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-a-list-of-lists
+response status:  200
+here is the pageIndex:  23
+next page:  https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
+response status:  200
+here is the pageIndex:  24
+next page:  https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git
+response status:  200
+here is the pageIndex:  25
+next page:  https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet
+response status:  200
+here is the pageIndex:  26
+next page:  https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git
+response status:  200
+here is the pageIndex:  27
+next page:  https://stackoverflow.com/questions/14994391/thinking-in-angularjs-if-i-have-a-jquery-background
+response status:  200
+here is the pageIndex:  28
+next page:  https://stackoverflow.com/questions/309424/how-do-i-read-convert-an-inputstream-into-a-string-in-java
+response status:  200
+here is the pageIndex:  29
+next page:  https://stackoverflow.com/questions/221294/how-do-you-get-a-timestamp-in-javascript
+response status:  200
+here is the pageIndex:  30
+next page:  https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
+response status:  200
+here is the pageIndex:  31
+next page:  https://stackoverflow.com/questions/426258/setting-checked-for-a-checkbox-with-jquery
+response status:  200
+here is the pageIndex:  32
+next page:  https://stackoverflow.com/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github
+response status:  200
+here is the pageIndex:  33
+next page:  https://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses
+response status:  200
+here is the pageIndex:  34
+next page:  https://stackoverflow.com/questions/134845/which-href-value-should-i-use-for-javascript-links-or-javascriptvoid0
+response status:  200
+here is the pageIndex:  35
+next page:  https://stackoverflow.com/questions/271526/avoiding-nullpointerexception-in-java
+response status:  200
+here is the pageIndex:  36
+next page:  https://stackoverflow.com/questions/136097/difference-between-staticmethod-and-classmethod
+response status:  200
+here is the pageIndex:  37
+next page:  https://stackoverflow.com/questions/5480258/how-to-delete-a-remote-tag
+response status:  200
+here is the pageIndex:  38
+next page:  https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
+response status:  200
+here is the pageIndex:  39
+next page:  https://stackoverflow.com/questions/2610497/change-a-html5-inputs-placeholder-color-with-css
+response status:  200
+here is the pageIndex:  40
+next page:  https://stackoverflow.com/questions/509211/understanding-slicing
+response status:  200
+here is the pageIndex:  41
+next page:  https://stackoverflow.com/questions/1109022/how-to-close-hide-the-android-soft-keyboard-programmatically
+response status:  200
+here is the pageIndex:  42
+next page:  https://stackoverflow.com/questions/105372/how-to-enumerate-an-enum
+response status:  200
+here is the pageIndex:  43
+next page:  https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine
+response status:  200
+here is the pageIndex:  44
+next page:  https://stackoverflow.com/questions/59838/how-can-i-check-if-a-directory-exists-in-a-bash-shell-script
+response status:  200
+here is the pageIndex:  45
+next page:  https://stackoverflow.com/questions/40471/what-are-the-differences-between-a-hashmap-and-a-hashtable-in-java
+response status:  200
+here is the pageIndex:  46
+next page:  https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming
+response status:  200
+here is the pageIndex:  47
+next page:  https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
+response status:  200
+here is the pageIndex:  48
+next page:  https://stackoverflow.com/questions/14415881/how-can-i-pair-socks-from-a-pile-efficiently
+response status:  200
+here is the pageIndex:  49
+next page:  https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
+response status:  200
+here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=3
+response status:  200
