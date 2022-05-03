@@ -8,6 +8,7 @@ pageNum = 1
 postPage = []
 pageIndex = 51
 pageFinal = pageNum + 100
+reqCounter = 0
 
 
 class CaseSpider(scrapy.Spider):
@@ -17,12 +18,19 @@ class CaseSpider(scrapy.Spider):
     handle_httpstatus_list = [404, 429] #we handle 404's inside the parse function
 
     def parse(self, response):
+        global reqCounter
         global urlVal
         global pageNum
         global postPage
         global pageIndex
         global pageFinal
         print("response status: ",response.status)
+
+
+        reqCounter += 1
+        if(reqCounter > 150):
+            reqCounter = 0
+            time.sleep(60)
 
 
         #automated stop for testing purposes
