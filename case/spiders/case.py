@@ -15,7 +15,7 @@ class CaseSpider(scrapy.Spider):
     name = 'case'
     allowed_domains = ['stackoverflow.com']
     start_urls = ['https://stackoverflow.com/questions?tab=votes&page=1']
-    handle_httpstatus_list = [404] #we handle 404's inside the parse function
+    handle_httpstatus_list = [404, 429] #we handle 404's inside the parse function
 
     def parse(self, response):
         global reqCounter
@@ -25,6 +25,47 @@ class CaseSpider(scrapy.Spider):
         global pageIndex
         global pageFinal
         print("response status: ",response.status)
+
+
+        if(response.status == 429):
+            time.sleep(180)
+            pageIndex += 1
+            if(pageIndex > 49):
+                pageIndex = -1
+                next_page = "https://stackoverflow.com/questions?tab=votes&page=" + str(pageNum)
+                pageNum += 1
+                print("here's the new list of next pages: ",next_page)
+                yield scrapy.Request(url=next_page, callback=self.parse,dont_filter = True)
+                return
+            #gets list of questions (only have to do this once per changing of questions listings page)
+            if(pageIndex == -1):
+                print("in here")
+                pageIndex = 0
+                posts = response.css(".s-post-summary--content-title .s-link").extract()
+                print("number of posts on this page: ",len(posts))
+                print("here are the questions: ")
+                postPage = posts
+                for item in postPage:
+                    item = item.split("\"")
+                    print(item[1])
+                #goes to next forum post, after gathering all data
+                next_page = "https://stackoverflow.com" + postPage[pageIndex].split("\"")[1]
+                pageIndex += 1
+                print("next page: ",next_page)
+
+                yield scrapy.Request(url=next_page, callback=self.parse,dont_filter = True)
+                return
+            #goes to next forum post, after gathering all data
+            print("here is the pageIndex: ",pageIndex)
+            next_page = "https://stackoverflow.com" + postPage[pageIndex].split("\"")[1]
+            pageIndex += 1
+            print("next page: ",next_page)
+
+            yield scrapy.Request(url=next_page, callback=self.parse,dont_filter = True)
+            
+        
+            
+
 
 
         #automated stop for testing purposes
