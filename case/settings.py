@@ -15,6 +15,7 @@ NEWSPIDER_MODULE = 'case.spiders'
 #Export as CSV Feed
 FEED_FORMAT = "csv"
 FEED_URI = "forumPost.csv"
+RETRY_HTTP_CODES = [429]
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -55,6 +56,7 @@ SPIDER_MIDDLEWARES = {
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
     'case.middlewares.CaseDownloaderMiddleware': 543,
 }
 
