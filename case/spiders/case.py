@@ -6,6 +6,7 @@ urlVal = 8
 pageNum = 1
 postPage = []
 pageIndex = 51
+pageFinal = pageNum + 100
 
 
 class CaseSpider(scrapy.Spider):
@@ -19,11 +20,12 @@ class CaseSpider(scrapy.Spider):
         global pageNum
         global postPage
         global pageIndex
+        global pageFinal
         print("response status: ",response.status)
 
 
         #automated stop for testing purposes
-        if(pageNum > 3):
+        if(pageNum > pageFinal):
             return
 
         #each page has 50 forum posts on it, checks if we looked at all posts
