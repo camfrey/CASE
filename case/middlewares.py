@@ -73,9 +73,7 @@ class CaseDownloaderMiddleware(RetryMiddleware):
     @classmethod
     def from_crawler(cls, crawler):
         # This method is used by Scrapy to create your spiders.
-        s = cls()
-        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
-        return s
+       return cls(crawler)
 
     def process_request(self, request, spider):
         # Called for each request that goes through the downloader
