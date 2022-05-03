@@ -27,12 +27,6 @@ class CaseSpider(scrapy.Spider):
         print("response status: ",response.status)
 
 
-        reqCounter += 1
-        if(reqCounter > 150):
-            reqCounter = 0
-            time.sleep(60)
-
-
         #automated stop for testing purposes
         if(pageNum > pageFinal):
             return
