@@ -58,10 +58,14 @@ class CaseSpiderMiddleware:
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class CaseDownloaderMiddleware:
+class CaseDownloaderMiddleware(RetryMiddleware):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
+
+    def __init__(self, crawler):
+        super(CaseDownloaderMiddleware, self).__init__(crawler.settings)
+        self.crawler = crawler
 
     @classmethod
     def from_crawler(cls, crawler):
