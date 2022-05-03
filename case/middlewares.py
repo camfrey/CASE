@@ -9,6 +9,9 @@ import time
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
+from scrapy.downloadermiddlewares.retry import RetryMiddleware
+from scrapy.utils.response import response_status_message
+
 
 
 class CaseSpiderMiddleware:
