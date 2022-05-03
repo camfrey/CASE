@@ -90,13 +90,18 @@ class CaseDownloaderMiddleware(RetryMiddleware):
     def process_response(self, request, response, spider):
         # Called with the response returned from the downloader.
 
-        #detect if 429 (throttling)
-        if response.status == 429:
+        if request.meta.get('dont_retry', False):
+            return response
+        elif response.status == 429:
             self.crawler.engine.pause()
             time.sleep(60) # If the rate limit is renewed in a minute, put 60 seconds, and so on.
             self.crawler.engine.unpause()
             reason = response_status_message(response.status)
             return self._retry(request, reason, spider) or response
+        elif response.status in self.retry_http_codes:
+            reason = response_status_message(response.status)
+            return self._retry(request, reason, spider) or response
+        return response 
 
         # Must either;
         # - return a Response object
