@@ -1,6 +1,7 @@
 from logging import exception
 import scrapy
 import re
+import time
 
 urlVal = 8
 pageNum = 1
@@ -13,7 +14,7 @@ class CaseSpider(scrapy.Spider):
     name = 'case'
     allowed_domains = ['stackoverflow.com']
     start_urls = ['https://stackoverflow.com/questions?tab=votes&page=1']
-    handle_httpstatus_list = [404] #we handle 404's inside the parse function
+    handle_httpstatus_list = [404, 429] #we handle 404's inside the parse function
 
     def parse(self, response):
         global urlVal
