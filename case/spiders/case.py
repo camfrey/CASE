@@ -15,7 +15,7 @@ class CaseSpider(scrapy.Spider):
     name = 'case'
     allowed_domains = ['stackoverflow.com']
     start_urls = ['https://stackoverflow.com/questions?tab=votes&page=1']
-    handle_httpstatus_list = [404, 429] #we handle 404's inside the parse function
+    handle_httpstatus_list = [404] #we handle 404's inside the parse function
 
     def parse(self, response):
         global reqCounter
