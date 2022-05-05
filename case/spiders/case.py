@@ -205,7 +205,8 @@ class CaseSpider(scrapy.Spider):
             'bookmarks' : bookmarkCount,
             'created' : created,
             'modified' : modified,
-            'languages' : languages
+            'languages' : languages,
+            'url' : response.url
         }
         yield scraped_info
         i += 1
