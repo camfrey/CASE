@@ -117,6 +117,7 @@ class CaseSpider(scrapy.Spider):
         bookmarks = response.css(".js-bookmark-count::text").extract()
         tags = response.css(".post-tag::text").extract()
         firstAnswer = response.css(".answer.js-answer.accepted-answer").extract()
+        firstAnswerTextOnly = response.css(".answer.js-answer.accepted-answer *::text").extract()
 
 
         comment = ""
@@ -216,6 +217,12 @@ class CaseSpider(scrapy.Spider):
             print(allCode)
             break
 
+
+        #first answer only
+        answer = ""
+        for item in zip(firstAnswerTextOnly):
+            answer += item[0]
+
         
 
 
@@ -225,6 +232,7 @@ class CaseSpider(scrapy.Spider):
         scraped_info = {
             'title' : title,
             'comment' : allComments,
+            'first answer' : answer,
             'vote' : voteTotal,
             'views' : viewCount,
             'bookmarks' : bookmarkCount,
