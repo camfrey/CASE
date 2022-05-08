@@ -2,6 +2,7 @@ from logging import exception
 import scrapy
 import re
 import time
+from html.parser import HTMLParser  # Python 3
 
 urlVal = 8
 pageNum = 1
@@ -115,6 +116,7 @@ class CaseSpider(scrapy.Spider):
         views = response.css(".flex--item.ws-nowrap.mb8 ").extract()
         bookmarks = response.css(".js-bookmark-count::text").extract()
         tags = response.css(".post-tag::text").extract()
+        firstAnswer = response.css(".answer.js-answer.accepted-answer").extract()
 
 
         comment = ""
@@ -194,6 +196,27 @@ class CaseSpider(scrapy.Spider):
             i += 1
 
 
+        #go through to parse only the code portions
+        allCode = ""
+        parser = HTMLParser()
+        for item in zip(firstAnswer):
+            onlyCode = item[0]
+            onlyCode = onlyCode.split("<code>")
+            if(len(onlyCode) < 2):
+                break
+            onlyCode.pop(0)
+            for snippets in onlyCode:
+                snippets = snippets.split("</code>")
+                newSnippet = snippets[0]
+                newSnippet = parser.unescape(newSnippet)
+                allCode += newSnippet
+            print("here:::::")
+            print(allCode)
+            break
+
+        
+
+
         #going to do the scraped info yield here
         i = 0
 #        for item in fullDoc:
@@ -206,6 +229,7 @@ class CaseSpider(scrapy.Spider):
             'created' : created,
             'modified' : modified,
             'languages' : languages,
+            'only code' : allCode,
             'url' : response.url
         }
         yield scraped_info
