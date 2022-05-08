@@ -3,6 +3,7 @@ import scrapy
 import re
 import time
 from html.parser import HTMLParser  # Python 3
+from html import unescape
 
 urlVal = 8
 pageNum = 1
@@ -201,7 +202,7 @@ class CaseSpider(scrapy.Spider):
 
         #go through to parse only the code portions
         allCode = ""
-        parser = HTMLParser()
+        #parser = HTMLParser()
         for item in zip(firstAnswer):
             onlyCode = item[0]
             onlyCode = onlyCode.split("<code>")
@@ -211,7 +212,7 @@ class CaseSpider(scrapy.Spider):
             for snippets in onlyCode:
                 snippets = snippets.split("</code>")
                 newSnippet = snippets[0]
-                newSnippet = parser.unescape(newSnippet)
+                newSnippet = unescape(newSnippet)
                 allCode += newSnippet
             break
 
