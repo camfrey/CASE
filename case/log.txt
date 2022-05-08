@@ -261,3 +261,572 @@ application/jsonapplication/javascript
 text/htmlapplication/json
 here is the pageIndex:  6
 next page:  https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
+response status:  200
+here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=1
+response status:  200
+in here
+number of posts on this page:  50
+here are the questions: 
+/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
+/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
+/questions/231767/what-does-the-yield-keyword-do
+/questions/477816/what-is-the-correct-json-content-type
+/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
+/questions/348170/how-do-i-undo-git-add-before-commit
+/questions/6591213/how-do-i-rename-a-local-git-branch
+/questions/1642028/what-is-the-operator-in-c-c
+/questions/79923/what-and-where-are-the-stack-and-heap
+/questions/244777/can-comments-be-used-in-json
+/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
+/questions/8318911/why-does-html-think-chucknorris-is-a-color
+/questions/178325/how-do-i-check-if-an-element-is-hidden-in-jquery
+/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
+/questions/1783405/how-do-i-check-out-a-remote-git-branch
+/questions/503093/how-do-i-redirect-to-another-webpage
+/questions/179123/how-to-modify-existing-unpushed-commit-messages
+/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+/questions/111102/how-do-javascript-closures-work
+/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+/questions/419163/what-does-if-name-main-do
+/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
+/questions/336859/var-functionname-function-vs-function-functionname
+/questions/40480/is-java-pass-by-reference-or-pass-by-value
+/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result
+/questions/394809/does-python-have-a-ternary-conditional-operator
+/questions/7074/what-is-the-difference-between-string-and-string-in-c
+/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
+/questions/208105/how-do-i-remove-a-property-from-a-javascript-object
+/questions/100003/what-are-metaclasses-in-python
+/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions
+/questions/14220321/how-to-return-the-response-from-an-asynchronous-call
+/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression-take-union-of-dictionari
+/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp
+/questions/630453/what-is-the-difference-between-post-and-put-in-http
+/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
+/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git
+/questions/826782/how-to-disable-text-selection-highlighting
+/questions/762011/whats-the-difference-between-using-let-and-var
+/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
+/questions/52704/how-do-i-discard-unstaged-changes-in-git
+/questions/89228/how-do-i-execute-a-program-or-call-a-system-command
+/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
+/questions/549/the-definitive-guide-to-form-based-website-authentication
+/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers
+/questions/9329446/for-each-over-an-array-in-javascript
+/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
+next page:  https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
+response status:  200
+here:::::
+if (data[c] >= 128)
+    sum += data[c];
+T = branch taken
+N = branch not taken
+
+data[] = 0, 1, 2, 3, 4, ... 126, 127, 128, 129, 130, ... 250, 251, 252, ...
+branch = N  N  N  N  N  ...   N    N    T    T    T  ...   T    T    T  ...
+
+       = NNNNNNNNNNNN ... NNNNNNNTTTTTTTTT ... TTTTTTTTTT  (easy to predict)
+data[] = 226, 185, 125, 158, 198, 144, 217, 79, 202, 118,  14, 150, 177, 182, ...
+branch =   T,   T,   N,   T,   T,   T,   T,  N,   T,   N,   N,   T,   T,   T  ...
+
+       = TTNTTTTNTNNTTT ...   (completely random - impossible to predict)
+if (data[c] >= 128)
+    sum += data[c];
+int t = (data[c] - 128) >> 31;
+sum += ~t & data[c];
+data[]-O3-ftree-vectorizecmovaddcmov/Ox
+here is the pageIndex:  1
+next page:  https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+response status:  200
+here:::::
+$ git commit -m "Something terribly misguided" # (0: Your Accident)
+$ git reset HEAD~                              # (1)
+[ edit files as necessary ]                    # (2)
+$ git add .                                    # (3)
+$ git commit -c ORIG_HEAD                      # (4)
+git resetgit addreset.git/ORIG_HEADcommit-c ORIG_HEAD-Ccommit --amendgit push origin main --force[-with-lease]--force--force-with-leasegit reflogHEAD~HEAD~1git checkout theRightBranchgit reset --soft HEAD^git reset --soft HEAD~1--softgit reset HEAD~1zsh: no matches found: HEAD^git reset --soft HEAD\^git commit -a-a--soft--mixedgit commit -m "Something terribly misguided"
+here is the pageIndex:  2
+next page:  https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+response status:  200
+here:::::
+$ git push -d <remote_name> <branchname>
+$ git branch -d <branchname>
+<remote_name>origin$ git branch -d <branch_name>
+$ git branch -D <branch_name>
+-d--delete-D--delete --forceman git-branchgit branch -d-f$ git push <remote_name> --delete <branch_name>
+$ git push <remote_name> :<branch_name>
+git push-d--deletegit push [remotename] :[branch]$ git push origin :serverfix
+To git@github.com:schacon/simplegit.git
+ - [deleted]         serverfix
+git push [remotename] [localbranch]:[remotebranch][localbranch][remotebranch]git push origin: bugfix# Fetch changes from all remotes and locally delete 
+# remote deleted branches/tags etc
+# --prune will do the job :-;
+git fetch --all --prune
+git fetch --all --prunegit branch -dgit push origin --deletegit branch -agit fetch --all --prunegit branch -agit branch -rgit remote show origingit branch -D Branch_Name
+here is the pageIndex:  3
+next page:  https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
+response status:  200
+here:::::
+git pullgit fetchgit mergegit fetchrefs/remotes/<remote>/refs/headsgit fetchgit pullgit pullgit pullgit fetchgit merge FETCH_HEADgit pullgit remotegit pull/home/alice/git fetch /home/bobgit mergepullfetchmergemergepull
+here is the pageIndex:  4
+next page:  https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+response status:  200
+here:::::
+yield>>> mylist = [1, 2, 3]
+>>> for i in mylist:
+...    print(i)
+1
+2
+3
+mylist>>> mylist = [x*x for x in range(3)]
+>>> for i in mylist:
+...    print(i)
+0
+1
+4
+for... in...listsstrings>>> mygenerator = (x*x for x in range(3))
+>>> for i in mygenerator:
+...    print(i)
+0
+1
+4
+()[]for i in mygeneratoryieldreturn>>> def create_generator():
+...    mylist = range(3)
+...    for i in mylist:
+...        yield i*i
+...
+>>> mygenerator = create_generator() # create a generator
+>>> print(mygenerator) # mygenerator is an object!
+<generator object create_generator at 0xb7555c34>
+>>> for i in mygenerator:
+...     print(i)
+0
+1
+4
+yieldforforyieldyield"if/else"# Here you create the method of the node object that will return the generator
+def _get_child_candidates(self, distance, min_dist, max_dist):
+
+    # Here is the code that will be called each time you use the generator object:
+
+    # If there is still a child of the node object on its left
+    # AND if the distance is ok, return the next child
+    if self._leftchild and distance - max_dist < self._median:
+        yield self._leftchild
+
+    # If there is still a child of the node object on its right
+    # AND if the distance is ok, return the next child
+    if self._rightchild and distance + max_dist >= self._median:
+        yield self._rightchild
+
+    # If the function arrives here, the generator will be considered empty
+    # there is no more than two values: the left and the right children
+# Create an empty list and a list with the current object reference
+result, candidates = list(), [self]
+
+# Loop on candidates (they contain only one element at the beginning)
+while candidates:
+
+    # Get the last candidate and remove it from the list
+    node = candidates.pop()
+
+    # Get the distance between obj and the candidate
+    distance = node._get_dist(obj)
+
+    # If distance is ok, then you can fill the result
+    if distance <= max_dist and distance >= min_dist:
+        result.extend(node._values)
+
+    # Add the children of the candidate in the candidate's list
+    # so the loop will keep running until it will have looked
+    # at all the children of the children of the children, etc. of the candidate
+    candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))
+
+return result
+candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))whileextend()>>> a = [1, 2]
+>>> b = [3, 4]
+>>> a.extend(b)
+>>> print(a)
+[1, 2, 3, 4]
+>>> class Bank(): # Let's create a bank, building ATMs
+...    crisis = False
+...    def create_atm(self):
+...        while not self.crisis:
+...            yield "$100"
+>>> hsbc = Bank() # When everything's ok the ATM gives you as much as you want
+>>> corner_street_atm = hsbc.create_atm()
+>>> print(corner_street_atm.next())
+$100
+>>> print(corner_street_atm.next())
+$100
+>>> print([corner_street_atm.next() for cash in range(5)])
+['$100', '$100', '$100', '$100', '$100']
+>>> hsbc.crisis = True # Crisis is coming, no more money!
+>>> print(corner_street_atm.next())
+<type 'exceptions.StopIteration'>
+>>> wall_street_atm = hsbc.create_atm() # It's even true for new ATMs
+>>> print(wall_street_atm.next())
+<type 'exceptions.StopIteration'>
+>>> hsbc.crisis = False # The trouble is, even post-crisis the ATM remains empty
+>>> print(corner_street_atm.next())
+<type 'exceptions.StopIteration'>
+>>> brand_new_atm = hsbc.create_atm() # Build a new one to get back in business
+>>> for cash in brand_new_atm:
+...    print cash
+$100
+$100
+$100
+$100
+$100
+$100
+$100
+$100
+$100
+...
+print(corner_street_atm.__next__())print(next(corner_street_atm))Map / Zipimport itertools>>> horses = [1, 2, 3, 4]
+>>> races = itertools.permutations(horses)
+>>> print(races)
+<itertools.permutations object at 0xb754f1dc>
+>>> print(list(itertools.permutations(horses)))
+[(1, 2, 3, 4),
+ (1, 2, 4, 3),
+ (1, 3, 2, 4),
+ (1, 3, 4, 2),
+ (1, 4, 2, 3),
+ (1, 4, 3, 2),
+ (2, 1, 3, 4),
+ (2, 1, 4, 3),
+ (2, 3, 1, 4),
+ (2, 3, 4, 1),
+ (2, 4, 1, 3),
+ (2, 4, 3, 1),
+ (3, 1, 2, 4),
+ (3, 1, 4, 2),
+ (3, 2, 1, 4),
+ (3, 2, 4, 1),
+ (3, 4, 1, 2),
+ (3, 4, 2, 1),
+ (4, 1, 2, 3),
+ (4, 1, 3, 2),
+ (4, 2, 1, 3),
+ (4, 2, 3, 1),
+ (4, 3, 1, 2),
+ (4, 3, 2, 1)]
+__iter__()__next__()foryieldyieldyieldyieldyield()[]()returnreturnyield
+here is the pageIndex:  5
+next page:  https://stackoverflow.com/questions/477816/what-is-the-correct-json-content-type
+response status:  200
+here:::::
+application/json
+application/jsonapplication/javascript
+text/htmlapplication/json
+here is the pageIndex:  6
+next page:  https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
+response status:  200
+here:::::
+indexindexOfspliceconst array = [2, 5, 9];
+
+console.log(array);
+
+const index = array.indexOf(5);
+if (index > -1) {
+  array.splice(index, 1); // 2nd parameter means remove one item only
+}
+
+// array = [2, 9]
+console.log(array); splicesplice5[2,5,9,1,5,8,5]function removeItemOnce(arr, value) {
+  var index = arr.indexOf(value);
+  if (index > -1) {
+    arr.splice(index, 1);
+  }
+  return arr;
+}
+
+function removeItemAll(arr, value) {
+  var i = 0;
+  while (i < arr.length) {
+    if (arr[i] === value) {
+      arr.splice(i, 1);
+    } else {
+      ++i;
+    }
+  }
+  return arr;
+}
+// Usage
+console.log(removeItemOnce([2,5,9,1,5,8,5], 5))
+console.log(removeItemAll([2,5,9,1,5,8,5], 5))function removeItem<T>(arr: Array<T>, value: T): Array<T> { 
+  const index = arr.indexOf(value);
+  if (index > -1) {
+    arr.splice(index, 1);
+  }
+  return arr;
+}
+myArray.remove(index);Array.unshift()pull()Array.remove()
+here is the pageIndex:  7
+next page:  https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit
+response status:  200
+here:::::
+git addgit reset <file>
+git reset
+git reset HEAD <file>git reset HEADHEADHEADgit addgit reset HEAD *.extext*.bmp*.zipgit rm --cachedgit reset HEAD <filename>git reset -pgit add -pgit add61/3AF3...613AF3...git cat-file -p <object-id>
+here is the pageIndex:  8
+next page:  https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch
+response status:  200
+here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=1
+response status:  200
+in here
+number of posts on this page:  50
+here are the questions: 
+/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
+/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
+/questions/231767/what-does-the-yield-keyword-do
+/questions/477816/what-is-the-correct-json-content-type
+/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
+/questions/348170/how-do-i-undo-git-add-before-commit
+/questions/6591213/how-do-i-rename-a-local-git-branch
+/questions/1642028/what-is-the-operator-in-c-c
+/questions/79923/what-and-where-are-the-stack-and-heap
+/questions/244777/can-comments-be-used-in-json
+/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
+/questions/8318911/why-does-html-think-chucknorris-is-a-color
+/questions/178325/how-do-i-check-if-an-element-is-hidden-in-jquery
+/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
+/questions/1783405/how-do-i-check-out-a-remote-git-branch
+/questions/503093/how-do-i-redirect-to-another-webpage
+/questions/179123/how-to-modify-existing-unpushed-commit-messages
+/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+/questions/111102/how-do-javascript-closures-work
+/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+/questions/419163/what-does-if-name-main-do
+/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
+/questions/336859/var-functionname-function-vs-function-functionname
+/questions/40480/is-java-pass-by-reference-or-pass-by-value
+/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result
+/questions/394809/does-python-have-a-ternary-conditional-operator
+/questions/7074/what-is-the-difference-between-string-and-string-in-c
+/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
+/questions/208105/how-do-i-remove-a-property-from-a-javascript-object
+/questions/100003/what-are-metaclasses-in-python
+/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions
+/questions/14220321/how-to-return-the-response-from-an-asynchronous-call
+/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression-take-union-of-dictionari
+/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp
+/questions/630453/what-is-the-difference-between-post-and-put-in-http
+/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
+/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git
+/questions/826782/how-to-disable-text-selection-highlighting
+/questions/762011/whats-the-difference-between-using-let-and-var
+/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
+/questions/52704/how-do-i-discard-unstaged-changes-in-git
+/questions/89228/how-do-i-execute-a-program-or-call-a-system-command
+/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
+/questions/549/the-definitive-guide-to-form-based-website-authentication
+/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers
+/questions/9329446/for-each-over-an-array-in-javascript
+/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
+next page:  https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
+response status:  200
+here:::::
+if (data[c] >= 128)
+    sum += data[c];
+T = branch taken
+N = branch not taken
+
+data[] = 0, 1, 2, 3, 4, ... 126, 127, 128, 129, 130, ... 250, 251, 252, ...
+branch = N  N  N  N  N  ...   N    N    T    T    T  ...   T    T    T  ...
+
+       = NNNNNNNNNNNN ... NNNNNNNTTTTTTTTT ... TTTTTTTTTT  (easy to predict)
+data[] = 226, 185, 125, 158, 198, 144, 217, 79, 202, 118,  14, 150, 177, 182, ...
+branch =   T,   T,   N,   T,   T,   T,   T,  N,   T,   N,   N,   T,   T,   T  ...
+
+       = TTNTTTTNTNNTTT ...   (completely random - impossible to predict)
+if (data[c] >= 128)
+    sum += data[c];
+int t = (data[c] - 128) >> 31;
+sum += ~t & data[c];
+data[]-O3-ftree-vectorizecmovaddcmov/Ox
+here is the pageIndex:  1
+next page:  https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+response status:  200
+here:::::
+$ git commit -m "Something terribly misguided" # (0: Your Accident)
+$ git reset HEAD~                              # (1)
+[ edit files as necessary ]                    # (2)
+$ git add .                                    # (3)
+$ git commit -c ORIG_HEAD                      # (4)
+git resetgit addreset.git/ORIG_HEADcommit-c ORIG_HEAD-Ccommit --amendgit push origin main --force[-with-lease]--force--force-with-leasegit reflogHEAD~HEAD~1git checkout theRightBranchgit reset --soft HEAD^git reset --soft HEAD~1--softgit reset HEAD~1zsh: no matches found: HEAD^git reset --soft HEAD\^git commit -a-a--soft--mixedgit commit -m "Something terribly misguided"
+here is the pageIndex:  2
+next page:  https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+response status:  200
+here:::::
+$ git push -d <remote_name> <branchname>
+$ git branch -d <branchname>
+<remote_name>origin$ git branch -d <branch_name>
+$ git branch -D <branch_name>
+-d--delete-D--delete --forceman git-branchgit branch -d-f$ git push <remote_name> --delete <branch_name>
+$ git push <remote_name> :<branch_name>
+git push-d--deletegit push [remotename] :[branch]$ git push origin :serverfix
+To git@github.com:schacon/simplegit.git
+ - [deleted]         serverfix
+git push [remotename] [localbranch]:[remotebranch][localbranch][remotebranch]git push origin: bugfix# Fetch changes from all remotes and locally delete 
+# remote deleted branches/tags etc
+# --prune will do the job :-;
+git fetch --all --prune
+git fetch --all --prunegit branch -dgit push origin --deletegit branch -agit fetch --all --prunegit branch -agit branch -rgit remote show origingit branch -D Branch_Name
+here is the pageIndex:  3
+next page:  https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
+response status:  200
+here:::::
+git pullgit fetchgit mergegit fetchrefs/remotes/<remote>/refs/headsgit fetchgit pullgit pullgit pullgit fetchgit merge FETCH_HEADgit pullgit remotegit pull/home/alice/git fetch /home/bobgit mergepullfetchmergemergepull
+here is the pageIndex:  4
+next page:  https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+response status:  200
+here:::::
+yield>>> mylist = [1, 2, 3]
+>>> for i in mylist:
+...    print(i)
+1
+2
+3
+mylist>>> mylist = [x*x for x in range(3)]
+>>> for i in mylist:
+...    print(i)
+0
+1
+4
+for... in...listsstrings>>> mygenerator = (x*x for x in range(3))
+>>> for i in mygenerator:
+...    print(i)
+0
+1
+4
+()[]for i in mygeneratoryieldreturn>>> def create_generator():
+...    mylist = range(3)
+...    for i in mylist:
+...        yield i*i
+...
+>>> mygenerator = create_generator() # create a generator
+>>> print(mygenerator) # mygenerator is an object!
+<generator object create_generator at 0xb7555c34>
+>>> for i in mygenerator:
+...     print(i)
+0
+1
+4
+yieldforforyieldyield"if/else"# Here you create the method of the node object that will return the generator
+def _get_child_candidates(self, distance, min_dist, max_dist):
+
+    # Here is the code that will be called each time you use the generator object:
+
+    # If there is still a child of the node object on its left
+    # AND if the distance is ok, return the next child
+    if self._leftchild and distance - max_dist < self._median:
+        yield self._leftchild
+
+    # If there is still a child of the node object on its right
+    # AND if the distance is ok, return the next child
+    if self._rightchild and distance + max_dist >= self._median:
+        yield self._rightchild
+
+    # If the function arrives here, the generator will be considered empty
+    # there is no more than two values: the left and the right children
+# Create an empty list and a list with the current object reference
+result, candidates = list(), [self]
+
+# Loop on candidates (they contain only one element at the beginning)
+while candidates:
+
+    # Get the last candidate and remove it from the list
+    node = candidates.pop()
+
+    # Get the distance between obj and the candidate
+    distance = node._get_dist(obj)
+
+    # If distance is ok, then you can fill the result
+    if distance <= max_dist and distance >= min_dist:
+        result.extend(node._values)
+
+    # Add the children of the candidate in the candidate's list
+    # so the loop will keep running until it will have looked
+    # at all the children of the children of the children, etc. of the candidate
+    candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))
+
+return result
+candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))whileextend()>>> a = [1, 2]
+>>> b = [3, 4]
+>>> a.extend(b)
+>>> print(a)
+[1, 2, 3, 4]
+>>> class Bank(): # Let's create a bank, building ATMs
+...    crisis = False
+...    def create_atm(self):
+...        while not self.crisis:
+...            yield "$100"
+>>> hsbc = Bank() # When everything's ok the ATM gives you as much as you want
+>>> corner_street_atm = hsbc.create_atm()
+>>> print(corner_street_atm.next())
+$100
+>>> print(corner_street_atm.next())
+$100
+>>> print([corner_street_atm.next() for cash in range(5)])
+['$100', '$100', '$100', '$100', '$100']
+>>> hsbc.crisis = True # Crisis is coming, no more money!
+>>> print(corner_street_atm.next())
+<type 'exceptions.StopIteration'>
+>>> wall_street_atm = hsbc.create_atm() # It's even true for new ATMs
+>>> print(wall_street_atm.next())
+<type 'exceptions.StopIteration'>
+>>> hsbc.crisis = False # The trouble is, even post-crisis the ATM remains empty
+>>> print(corner_street_atm.next())
+<type 'exceptions.StopIteration'>
+>>> brand_new_atm = hsbc.create_atm() # Build a new one to get back in business
+>>> for cash in brand_new_atm:
+...    print cash
+$100
+$100
+$100
+$100
+$100
+$100
+$100
+$100
+$100
+...
+print(corner_street_atm.__next__())print(next(corner_street_atm))Map / Zipimport itertools>>> horses = [1, 2, 3, 4]
+>>> races = itertools.permutations(horses)
+>>> print(races)
+<itertools.permutations object at 0xb754f1dc>
+>>> print(list(itertools.permutations(horses)))
+[(1, 2, 3, 4),
+ (1, 2, 4, 3),
+ (1, 3, 2, 4),
+ (1, 3, 4, 2),
+ (1, 4, 2, 3),
+ (1, 4, 3, 2),
+ (2, 1, 3, 4),
+ (2, 1, 4, 3),
+ (2, 3, 1, 4),
+ (2, 3, 4, 1),
+ (2, 4, 1, 3),
+ (2, 4, 3, 1),
+ (3, 1, 2, 4),
+ (3, 1, 4, 2),
+ (3, 2, 1, 4),
+ (3, 2, 4, 1),
+ (3, 4, 1, 2),
+ (3, 4, 2, 1),
+ (4, 1, 2, 3),
+ (4, 1, 3, 2),
+ (4, 2, 1, 3),
+ (4, 2, 3, 1),
+ (4, 3, 1, 2),
+ (4, 3, 2, 1)]
+__iter__()__next__()foryieldyieldyieldyieldyield()[]()returnreturnyield
+here is the pageIndex:  5
+next page:  https://stackoverflow.com/questions/477816/what-is-the-correct-json-content-type

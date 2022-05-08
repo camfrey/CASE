@@ -232,14 +232,14 @@ class CaseSpider(scrapy.Spider):
         scraped_info = {
             'title' : title,
             'comment' : allComments,
-            'first answer' : answer,
+            'firstAnswer' : answer,
             'vote' : voteTotal,
             'views' : viewCount,
             'bookmarks' : bookmarkCount,
             'created' : created,
             'modified' : modified,
             'languages' : languages,
-            'only code' : allCode,
+            'onlyCode' : allCode,
             'url' : response.url
         }
         yield scraped_info
