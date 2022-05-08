@@ -213,8 +213,6 @@ class CaseSpider(scrapy.Spider):
                 newSnippet = snippets[0]
                 newSnippet = parser.unescape(newSnippet)
                 allCode += newSnippet
-            print("here:::::")
-            print(allCode)
             break
 
 
