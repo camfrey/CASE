@@ -176,6 +176,8 @@ class CaseSpider(scrapy.Spider):
         for item in zip(votes):
             voteList.append(int(item[0]))
 
+        voteTotal = sum(voteList)
+
 
         #this will go through the tags to find any possible langauges
         #will probably have to manually store every possible language
@@ -223,7 +225,7 @@ class CaseSpider(scrapy.Spider):
         scraped_info = {
             'title' : title,
             'comment' : allComments,
-            'vote' : voteList,
+            'vote' : voteTotal,
             'views' : viewCount,
             'bookmarks' : bookmarkCount,
             'created' : created,
