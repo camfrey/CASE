@@ -56,777 +56,1597 @@ here are the questions:
 /questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
 next page:  https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
 response status:  200
-here:::::
-if (data[c] >= 128)
-    sum += data[c];
-T = branch taken
-N = branch not taken
-
-data[] = 0, 1, 2, 3, 4, ... 126, 127, 128, 129, 130, ... 250, 251, 252, ...
-branch = N  N  N  N  N  ...   N    N    T    T    T  ...   T    T    T  ...
-
-       = NNNNNNNNNNNN ... NNNNNNNTTTTTTTTT ... TTTTTTTTTT  (easy to predict)
-data[] = 226, 185, 125, 158, 198, 144, 217, 79, 202, 118,  14, 150, 177, 182, ...
-branch =   T,   T,   N,   T,   T,   T,   T,  N,   T,   N,   N,   T,   T,   T  ...
-
-       = TTNTTTTNTNNTTT ...   (completely random - impossible to predict)
-if (data[c] >= 128)
-    sum += data[c];
-int t = (data[c] - 128) >> 31;
-sum += ~t & data[c];
-data[]-O3-ftree-vectorizecmovaddcmov/Ox
+java
+new languages detected:  java 
+c++
+new languages detected:  java c++ 
+performance
+new languages detected:  java c++ 
+cpuarchitecture
+new languages detected:  java c++ 
+branchprediction
+new languages detected:  java c++ 
 here is the pageIndex:  1
 next page:  https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
 response status:  200
-here:::::
-$ git commit -m "Something terribly misguided" # (0: Your Accident)
-$ git reset HEAD~                              # (1)
-[ edit files as necessary ]                    # (2)
-$ git add .                                    # (3)
-$ git commit -c ORIG_HEAD                      # (4)
-git resetgit addreset.git/ORIG_HEADcommit-c ORIG_HEAD-Ccommit --amendgit push origin main --force[-with-lease]--force--force-with-leasegit reflogHEAD~HEAD~1git checkout theRightBranchgit reset --soft HEAD^git reset --soft HEAD~1--softgit reset HEAD~1zsh: no matches found: HEAD^git reset --soft HEAD\^git commit -a-a--soft--mixedgit commit -m "Something terribly misguided"
+git
+new languages detected:  
+versioncontrol
+new languages detected:  
+gitcommit
+new languages detected:  
+undo
+new languages detected:  
 here is the pageIndex:  2
 next page:  https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
 response status:  200
-here:::::
-$ git push -d <remote_name> <branchname>
-$ git branch -d <branchname>
-<remote_name>origin$ git branch -d <branch_name>
-$ git branch -D <branch_name>
--d--delete-D--delete --forceman git-branchgit branch -d-f$ git push <remote_name> --delete <branch_name>
-$ git push <remote_name> :<branch_name>
-git push-d--deletegit push [remotename] :[branch]$ git push origin :serverfix
-To git@github.com:schacon/simplegit.git
- - [deleted]         serverfix
-git push [remotename] [localbranch]:[remotebranch][localbranch][remotebranch]git push origin: bugfix# Fetch changes from all remotes and locally delete 
-# remote deleted branches/tags etc
-# --prune will do the job :-;
-git fetch --all --prune
-git fetch --all --prunegit branch -dgit push origin --deletegit branch -agit fetch --all --prunegit branch -agit branch -rgit remote show origingit branch -D Branch_Name
+git
+new languages detected:  
+versioncontrol
+new languages detected:  
+gitbranch
+new languages detected:  
+gitpush
+new languages detected:  
+gitremote
+new languages detected:  
 here is the pageIndex:  3
 next page:  https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
 response status:  200
-here:::::
-git pullgit fetchgit mergegit fetchrefs/remotes/<remote>/refs/headsgit fetchgit pullgit pullgit pullgit fetchgit merge FETCH_HEADgit pullgit remotegit pull/home/alice/git fetch /home/bobgit mergepullfetchmergemergepull
+git
+new languages detected:  
+versioncontrol
+new languages detected:  
+gitpull
+new languages detected:  
+gitfetch
+new languages detected:  
 here is the pageIndex:  4
 next page:  https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
 response status:  200
-here:::::
-yield>>> mylist = [1, 2, 3]
->>> for i in mylist:
-...    print(i)
-1
-2
-3
-mylist>>> mylist = [x*x for x in range(3)]
->>> for i in mylist:
-...    print(i)
-0
-1
-4
-for... in...listsstrings>>> mygenerator = (x*x for x in range(3))
->>> for i in mygenerator:
-...    print(i)
-0
-1
-4
-()[]for i in mygeneratoryieldreturn>>> def create_generator():
-...    mylist = range(3)
-...    for i in mylist:
-...        yield i*i
-...
->>> mygenerator = create_generator() # create a generator
->>> print(mygenerator) # mygenerator is an object!
-<generator object create_generator at 0xb7555c34>
->>> for i in mygenerator:
-...     print(i)
-0
-1
-4
-yieldforforyieldyield"if/else"# Here you create the method of the node object that will return the generator
-def _get_child_candidates(self, distance, min_dist, max_dist):
-
-    # Here is the code that will be called each time you use the generator object:
-
-    # If there is still a child of the node object on its left
-    # AND if the distance is ok, return the next child
-    if self._leftchild and distance - max_dist < self._median:
-        yield self._leftchild
-
-    # If there is still a child of the node object on its right
-    # AND if the distance is ok, return the next child
-    if self._rightchild and distance + max_dist >= self._median:
-        yield self._rightchild
-
-    # If the function arrives here, the generator will be considered empty
-    # there is no more than two values: the left and the right children
-# Create an empty list and a list with the current object reference
-result, candidates = list(), [self]
-
-# Loop on candidates (they contain only one element at the beginning)
-while candidates:
-
-    # Get the last candidate and remove it from the list
-    node = candidates.pop()
-
-    # Get the distance between obj and the candidate
-    distance = node._get_dist(obj)
-
-    # If distance is ok, then you can fill the result
-    if distance <= max_dist and distance >= min_dist:
-        result.extend(node._values)
-
-    # Add the children of the candidate in the candidate's list
-    # so the loop will keep running until it will have looked
-    # at all the children of the children of the children, etc. of the candidate
-    candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))
-
-return result
-candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))whileextend()>>> a = [1, 2]
->>> b = [3, 4]
->>> a.extend(b)
->>> print(a)
-[1, 2, 3, 4]
->>> class Bank(): # Let's create a bank, building ATMs
-...    crisis = False
-...    def create_atm(self):
-...        while not self.crisis:
-...            yield "$100"
->>> hsbc = Bank() # When everything's ok the ATM gives you as much as you want
->>> corner_street_atm = hsbc.create_atm()
->>> print(corner_street_atm.next())
-$100
->>> print(corner_street_atm.next())
-$100
->>> print([corner_street_atm.next() for cash in range(5)])
-['$100', '$100', '$100', '$100', '$100']
->>> hsbc.crisis = True # Crisis is coming, no more money!
->>> print(corner_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> wall_street_atm = hsbc.create_atm() # It's even true for new ATMs
->>> print(wall_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> hsbc.crisis = False # The trouble is, even post-crisis the ATM remains empty
->>> print(corner_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> brand_new_atm = hsbc.create_atm() # Build a new one to get back in business
->>> for cash in brand_new_atm:
-...    print cash
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-...
-print(corner_street_atm.__next__())print(next(corner_street_atm))Map / Zipimport itertools>>> horses = [1, 2, 3, 4]
->>> races = itertools.permutations(horses)
->>> print(races)
-<itertools.permutations object at 0xb754f1dc>
->>> print(list(itertools.permutations(horses)))
-[(1, 2, 3, 4),
- (1, 2, 4, 3),
- (1, 3, 2, 4),
- (1, 3, 4, 2),
- (1, 4, 2, 3),
- (1, 4, 3, 2),
- (2, 1, 3, 4),
- (2, 1, 4, 3),
- (2, 3, 1, 4),
- (2, 3, 4, 1),
- (2, 4, 1, 3),
- (2, 4, 3, 1),
- (3, 1, 2, 4),
- (3, 1, 4, 2),
- (3, 2, 1, 4),
- (3, 2, 4, 1),
- (3, 4, 1, 2),
- (3, 4, 2, 1),
- (4, 1, 2, 3),
- (4, 1, 3, 2),
- (4, 2, 1, 3),
- (4, 2, 3, 1),
- (4, 3, 1, 2),
- (4, 3, 2, 1)]
-__iter__()__next__()foryieldyieldyieldyieldyield()[]()returnreturnyield
+python
+new languages detected:  python 
 here is the pageIndex:  5
 next page:  https://stackoverflow.com/questions/477816/what-is-the-correct-json-content-type
 response status:  200
-here:::::
-application/json
-application/jsonapplication/javascript
-text/htmlapplication/json
+json
+new languages detected:  
 here is the pageIndex:  6
 next page:  https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
 response status:  200
-here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=1
-response status:  200
-in here
-number of posts on this page:  50
-here are the questions: 
-/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
-/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
-/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
-/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
-/questions/231767/what-does-the-yield-keyword-do
-/questions/477816/what-is-the-correct-json-content-type
-/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
-/questions/348170/how-do-i-undo-git-add-before-commit
-/questions/6591213/how-do-i-rename-a-local-git-branch
-/questions/1642028/what-is-the-operator-in-c-c
-/questions/79923/what-and-where-are-the-stack-and-heap
-/questions/244777/can-comments-be-used-in-json
-/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
-/questions/8318911/why-does-html-think-chucknorris-is-a-color
-/questions/178325/how-do-i-check-if-an-element-is-hidden-in-jquery
-/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
-/questions/1783405/how-do-i-check-out-a-remote-git-branch
-/questions/503093/how-do-i-redirect-to-another-webpage
-/questions/179123/how-to-modify-existing-unpushed-commit-messages
-/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
-/questions/111102/how-do-javascript-closures-work
-/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
-/questions/419163/what-does-if-name-main-do
-/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
-/questions/336859/var-functionname-function-vs-function-functionname
-/questions/40480/is-java-pass-by-reference-or-pass-by-value
-/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result
-/questions/394809/does-python-have-a-ternary-conditional-operator
-/questions/7074/what-is-the-difference-between-string-and-string-in-c
-/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
-/questions/208105/how-do-i-remove-a-property-from-a-javascript-object
-/questions/100003/what-are-metaclasses-in-python
-/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
-/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions
-/questions/14220321/how-to-return-the-response-from-an-asynchronous-call
-/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression-take-union-of-dictionari
-/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp
-/questions/630453/what-is-the-difference-between-post-and-put-in-http
-/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
-/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git
-/questions/826782/how-to-disable-text-selection-highlighting
-/questions/762011/whats-the-difference-between-using-let-and-var
-/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
-/questions/52704/how-do-i-discard-unstaged-changes-in-git
-/questions/89228/how-do-i-execute-a-program-or-call-a-system-command
-/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
-/questions/549/the-definitive-guide-to-form-based-website-authentication
-/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers
-/questions/9329446/for-each-over-an-array-in-javascript
-/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
-next page:  https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
-response status:  200
-here:::::
-if (data[c] >= 128)
-    sum += data[c];
-T = branch taken
-N = branch not taken
-
-data[] = 0, 1, 2, 3, 4, ... 126, 127, 128, 129, 130, ... 250, 251, 252, ...
-branch = N  N  N  N  N  ...   N    N    T    T    T  ...   T    T    T  ...
-
-       = NNNNNNNNNNNN ... NNNNNNNTTTTTTTTT ... TTTTTTTTTT  (easy to predict)
-data[] = 226, 185, 125, 158, 198, 144, 217, 79, 202, 118,  14, 150, 177, 182, ...
-branch =   T,   T,   N,   T,   T,   T,   T,  N,   T,   N,   N,   T,   T,   T  ...
-
-       = TTNTTTTNTNNTTT ...   (completely random - impossible to predict)
-if (data[c] >= 128)
-    sum += data[c];
-int t = (data[c] - 128) >> 31;
-sum += ~t & data[c];
-data[]-O3-ftree-vectorizecmovaddcmov/Ox
-here is the pageIndex:  1
-next page:  https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
-response status:  200
-here:::::
-$ git commit -m "Something terribly misguided" # (0: Your Accident)
-$ git reset HEAD~                              # (1)
-[ edit files as necessary ]                    # (2)
-$ git add .                                    # (3)
-$ git commit -c ORIG_HEAD                      # (4)
-git resetgit addreset.git/ORIG_HEADcommit-c ORIG_HEAD-Ccommit --amendgit push origin main --force[-with-lease]--force--force-with-leasegit reflogHEAD~HEAD~1git checkout theRightBranchgit reset --soft HEAD^git reset --soft HEAD~1--softgit reset HEAD~1zsh: no matches found: HEAD^git reset --soft HEAD\^git commit -a-a--soft--mixedgit commit -m "Something terribly misguided"
-here is the pageIndex:  2
-next page:  https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
-response status:  200
-here:::::
-$ git push -d <remote_name> <branchname>
-$ git branch -d <branchname>
-<remote_name>origin$ git branch -d <branch_name>
-$ git branch -D <branch_name>
--d--delete-D--delete --forceman git-branchgit branch -d-f$ git push <remote_name> --delete <branch_name>
-$ git push <remote_name> :<branch_name>
-git push-d--deletegit push [remotename] :[branch]$ git push origin :serverfix
-To git@github.com:schacon/simplegit.git
- - [deleted]         serverfix
-git push [remotename] [localbranch]:[remotebranch][localbranch][remotebranch]git push origin: bugfix# Fetch changes from all remotes and locally delete 
-# remote deleted branches/tags etc
-# --prune will do the job :-;
-git fetch --all --prune
-git fetch --all --prunegit branch -dgit push origin --deletegit branch -agit fetch --all --prunegit branch -agit branch -rgit remote show origingit branch -D Branch_Name
-here is the pageIndex:  3
-next page:  https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
-response status:  200
-here:::::
-git pullgit fetchgit mergegit fetchrefs/remotes/<remote>/refs/headsgit fetchgit pullgit pullgit pullgit fetchgit merge FETCH_HEADgit pullgit remotegit pull/home/alice/git fetch /home/bobgit mergepullfetchmergemergepull
-here is the pageIndex:  4
-next page:  https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
-response status:  200
-here:::::
-yield>>> mylist = [1, 2, 3]
->>> for i in mylist:
-...    print(i)
-1
-2
-3
-mylist>>> mylist = [x*x for x in range(3)]
->>> for i in mylist:
-...    print(i)
-0
-1
-4
-for... in...listsstrings>>> mygenerator = (x*x for x in range(3))
->>> for i in mygenerator:
-...    print(i)
-0
-1
-4
-()[]for i in mygeneratoryieldreturn>>> def create_generator():
-...    mylist = range(3)
-...    for i in mylist:
-...        yield i*i
-...
->>> mygenerator = create_generator() # create a generator
->>> print(mygenerator) # mygenerator is an object!
-<generator object create_generator at 0xb7555c34>
->>> for i in mygenerator:
-...     print(i)
-0
-1
-4
-yieldforforyieldyield"if/else"# Here you create the method of the node object that will return the generator
-def _get_child_candidates(self, distance, min_dist, max_dist):
-
-    # Here is the code that will be called each time you use the generator object:
-
-    # If there is still a child of the node object on its left
-    # AND if the distance is ok, return the next child
-    if self._leftchild and distance - max_dist < self._median:
-        yield self._leftchild
-
-    # If there is still a child of the node object on its right
-    # AND if the distance is ok, return the next child
-    if self._rightchild and distance + max_dist >= self._median:
-        yield self._rightchild
-
-    # If the function arrives here, the generator will be considered empty
-    # there is no more than two values: the left and the right children
-# Create an empty list and a list with the current object reference
-result, candidates = list(), [self]
-
-# Loop on candidates (they contain only one element at the beginning)
-while candidates:
-
-    # Get the last candidate and remove it from the list
-    node = candidates.pop()
-
-    # Get the distance between obj and the candidate
-    distance = node._get_dist(obj)
-
-    # If distance is ok, then you can fill the result
-    if distance <= max_dist and distance >= min_dist:
-        result.extend(node._values)
-
-    # Add the children of the candidate in the candidate's list
-    # so the loop will keep running until it will have looked
-    # at all the children of the children of the children, etc. of the candidate
-    candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))
-
-return result
-candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))whileextend()>>> a = [1, 2]
->>> b = [3, 4]
->>> a.extend(b)
->>> print(a)
-[1, 2, 3, 4]
->>> class Bank(): # Let's create a bank, building ATMs
-...    crisis = False
-...    def create_atm(self):
-...        while not self.crisis:
-...            yield "$100"
->>> hsbc = Bank() # When everything's ok the ATM gives you as much as you want
->>> corner_street_atm = hsbc.create_atm()
->>> print(corner_street_atm.next())
-$100
->>> print(corner_street_atm.next())
-$100
->>> print([corner_street_atm.next() for cash in range(5)])
-['$100', '$100', '$100', '$100', '$100']
->>> hsbc.crisis = True # Crisis is coming, no more money!
->>> print(corner_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> wall_street_atm = hsbc.create_atm() # It's even true for new ATMs
->>> print(wall_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> hsbc.crisis = False # The trouble is, even post-crisis the ATM remains empty
->>> print(corner_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> brand_new_atm = hsbc.create_atm() # Build a new one to get back in business
->>> for cash in brand_new_atm:
-...    print cash
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-...
-print(corner_street_atm.__next__())print(next(corner_street_atm))Map / Zipimport itertools>>> horses = [1, 2, 3, 4]
->>> races = itertools.permutations(horses)
->>> print(races)
-<itertools.permutations object at 0xb754f1dc>
->>> print(list(itertools.permutations(horses)))
-[(1, 2, 3, 4),
- (1, 2, 4, 3),
- (1, 3, 2, 4),
- (1, 3, 4, 2),
- (1, 4, 2, 3),
- (1, 4, 3, 2),
- (2, 1, 3, 4),
- (2, 1, 4, 3),
- (2, 3, 1, 4),
- (2, 3, 4, 1),
- (2, 4, 1, 3),
- (2, 4, 3, 1),
- (3, 1, 2, 4),
- (3, 1, 4, 2),
- (3, 2, 1, 4),
- (3, 2, 4, 1),
- (3, 4, 1, 2),
- (3, 4, 2, 1),
- (4, 1, 2, 3),
- (4, 1, 3, 2),
- (4, 2, 1, 3),
- (4, 2, 3, 1),
- (4, 3, 1, 2),
- (4, 3, 2, 1)]
-__iter__()__next__()foryieldyieldyieldyieldyield()[]()returnreturnyield
-here is the pageIndex:  5
-next page:  https://stackoverflow.com/questions/477816/what-is-the-correct-json-content-type
-response status:  200
-here:::::
-application/json
-application/jsonapplication/javascript
-text/htmlapplication/json
-here is the pageIndex:  6
-next page:  https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
-response status:  200
-here:::::
-indexindexOfspliceconst array = [2, 5, 9];
-
-console.log(array);
-
-const index = array.indexOf(5);
-if (index > -1) {
-  array.splice(index, 1); // 2nd parameter means remove one item only
-}
-
-// array = [2, 9]
-console.log(array); splicesplice5[2,5,9,1,5,8,5]function removeItemOnce(arr, value) {
-  var index = arr.indexOf(value);
-  if (index > -1) {
-    arr.splice(index, 1);
-  }
-  return arr;
-}
-
-function removeItemAll(arr, value) {
-  var i = 0;
-  while (i < arr.length) {
-    if (arr[i] === value) {
-      arr.splice(i, 1);
-    } else {
-      ++i;
-    }
-  }
-  return arr;
-}
-// Usage
-console.log(removeItemOnce([2,5,9,1,5,8,5], 5))
-console.log(removeItemAll([2,5,9,1,5,8,5], 5))function removeItem<T>(arr: Array<T>, value: T): Array<T> { 
-  const index = arr.indexOf(value);
-  if (index > -1) {
-    arr.splice(index, 1);
-  }
-  return arr;
-}
-myArray.remove(index);Array.unshift()pull()Array.remove()
+javascript
+new languages detected:  javascript 
+arrays
+new languages detected:  javascript 
 here is the pageIndex:  7
 next page:  https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit
 response status:  200
-here:::::
-git addgit reset <file>
-git reset
-git reset HEAD <file>git reset HEADHEADHEADgit addgit reset HEAD *.extext*.bmp*.zipgit rm --cachedgit reset HEAD <filename>git reset -pgit add -pgit add61/3AF3...613AF3...git cat-file -p <object-id>
+git
+new languages detected:  
+undo
+new languages detected:  
+gitrevert
+new languages detected:  
+gitadd
+new languages detected:  
 here is the pageIndex:  8
 next page:  https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch
 response status:  200
-here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=1
+git
+new languages detected:  
+versioncontrol
+new languages detected:  
+gitbranch
+new languages detected:  
+here is the pageIndex:  9
+next page:  https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c-c
+response status:  200
+c
+new languages detected:  c 
+operators
+new languages detected:  c 
+codeformatting
+new languages detected:  c 
+standardscompliance
+new languages detected:  c 
+here is the pageIndex:  10
+next page:  https://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap
+response status:  200
+memorymanagement
+new languages detected:  
+stack
+new languages detected:  
+languageagnostic
+new languages detected:  
+dynamicmemoryallocation
+new languages detected:  
+heapmemory
+new languages detected:  
+here is the pageIndex:  11
+next page:  https://stackoverflow.com/questions/244777/can-comments-be-used-in-json
+response status:  200
+json
+new languages detected:  
+comments
+new languages detected:  
+here is the pageIndex:  12
+next page:  https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
+response status:  200
+git
+new languages detected:  
+versioncontrol
+new languages detected:  
+overwrite
+new languages detected:  
+gitpull
+new languages detected:  
+gitfetch
+new languages detected:  
+here is the pageIndex:  13
+next page:  https://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color
+response status:  200
+html
+new languages detected:  html 
+browser
+new languages detected:  html 
+backgroundcolor
+new languages detected:  html 
+here is the pageIndex:  14
+next page:  https://stackoverflow.com/questions/178325/how-do-i-check-if-an-element-is-hidden-in-jquery
+response status:  200
+javascript
+new languages detected:  javascript 
+jquery
+new languages detected:  javascript 
+dom
+new languages detected:  javascript 
+visibility
+new languages detected:  javascript 
+here is the pageIndex:  15
+next page:  https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
+response status:  200
+javascript
+new languages detected:  javascript 
+syntax
+new languages detected:  javascript 
+jslint
+new languages detected:  javascript 
+usestrict
+new languages detected:  javascript 
+here is the pageIndex:  16
+next page:  https://stackoverflow.com/questions/1783405/how-do-i-check-out-a-remote-git-branch
+response status:  200
+git
+new languages detected:  
+gitcheckout
+new languages detected:  
+remotebranch
+new languages detected:  
+here is the pageIndex:  17
+next page:  https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage
+response status:  200
+javascript
+new languages detected:  javascript 
+jquery
+new languages detected:  javascript 
+redirect
+new languages detected:  javascript 
+here is the pageIndex:  18
+next page:  https://stackoverflow.com/questions/179123/how-to-modify-existing-unpushed-commit-messages
+response status:  200
+git
+new languages detected:  
+gitcommit
+new languages detected:  
+gitrewritehistory
+new languages detected:  
+gitamend
+new languages detected:  
+here is the pageIndex:  19
+next page:  https://stackoverflow.com/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
+response status:  200
+git
+new languages detected:  
+branch
+new languages detected:  
+gitbranch
+new languages detected:  
+here is the pageIndex:  20
+next page:  https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
+response status:  200
+javascript
+new languages detected:  javascript 
+function
+new languages detected:  javascript 
+variables
+new languages detected:  javascript 
+scope
+new languages detected:  javascript 
+closures
+new languages detected:  javascript 
+here is the pageIndex:  21
+next page:  https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+response status:  200
+git
+new languages detected:  
+gitcheckout
+new languages detected:  
+gitreset
+new languages detected:  
+gitrevert
+new languages detected:  
+here is the pageIndex:  22
+next page:  https://stackoverflow.com/questions/419163/what-does-if-name-main-do
+response status:  200
+python
+new languages detected:  python 
+namespaces
+new languages detected:  python 
+main
+new languages detected:  python 
+pythonmodule
+new languages detected:  python 
+idioms
+new languages detected:  python 
+here is the pageIndex:  23
+next page:  https://stackoverflow.com/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+string
+new languages detected:  javascript 
+substring
+new languages detected:  javascript 
+stringmatching
+new languages detected:  javascript 
+here is the pageIndex:  24
+next page:  https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname
+response status:  200
+javascript
+new languages detected:  javascript 
+function
+new languages detected:  javascript 
+syntax
+new languages detected:  javascript 
+idioms
+new languages detected:  javascript 
+here is the pageIndex:  25
+next page:  https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+response status:  200
+java
+new languages detected:  java 
+methods
+new languages detected:  java 
+parameterpassing
+new languages detected:  java 
+passbyreference
+new languages detected:  java 
+passbyvalue
+new languages detected:  java 
+here is the pageIndex:  26
+next page:  https://stackoverflow.com/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result
+response status:  200
+java
+new languages detected:  java 
+date
+new languages detected:  java 
+timezone
+new languages detected:  java 
+here is the pageIndex:  27
+next page:  https://stackoverflow.com/questions/394809/does-python-have-a-ternary-conditional-operator
+response status:  200
+python
+new languages detected:  python 
+operators
+new languages detected:  python 
+conditionaloperator
+new languages detected:  python 
+here is the pageIndex:  28
+next page:  https://stackoverflow.com/questions/7074/what-is-the-difference-between-string-and-string-in-c
+response status:  200
+c#
+new languages detected:  c# 
+net
+new languages detected:  c# 
+string
+new languages detected:  c# 
+types
+new languages detected:  c# 
+alias
+new languages detected:  c# 
+here is the pageIndex:  29
+next page:  https://stackoverflow.com/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
+response status:  200
+git
+new languages detected:  
+gitignore
+new languages detected:  
+gitrm
+new languages detected:  
+here is the pageIndex:  30
+next page:  https://stackoverflow.com/questions/208105/how-do-i-remove-a-property-from-a-javascript-object
+response status:  200
+javascript
+new languages detected:  javascript 
+object
+new languages detected:  javascript 
+oop
+new languages detected:  javascript 
+properties
+new languages detected:  javascript 
+here is the pageIndex:  31
+next page:  https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python
+response status:  200
+python
+new languages detected:  python 
+oop
+new languages detected:  python 
+metaclass
+new languages detected:  python 
+pythonclass
+new languages detected:  python 
+pythondatamodel
+new languages detected:  python 
+here is the pageIndex:  32
+next page:  https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
+response status:  200
+linux
+new languages detected:  
+text
+new languages detected:  
+grep
+new languages detected:  
+directory
+new languages detected:  
+find
+new languages detected:  
+here is the pageIndex:  33
+next page:  https://stackoverflow.com/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions
+response status:  200
+python
+new languages detected:  python 
+file
+new languages detected:  python 
+fileexists
+new languages detected:  python 
+here is the pageIndex:  34
+next page:  https://stackoverflow.com/questions/14220321/how-to-return-the-response-from-an-asynchronous-call
+response status:  200
+javascript
+new languages detected:  javascript 
+ajax
+new languages detected:  javascript 
+asynchronous
+new languages detected:  javascript 
+here is the pageIndex:  35
+next page:  https://stackoverflow.com/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression-take-union-of-dictionari
+response status:  200
+python
+new languages detected:  python 
+dictionary
+new languages detected:  python 
+merge
+new languages detected:  python 
+here is the pageIndex:  36
+next page:  https://stackoverflow.com/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp
+response status:  200
+android
+new languages detected:  
+androidlayout
+new languages detected:  
+userinterface
+new languages detected:  
+dimension
+new languages detected:  
+unitsofmeasurement
+new languages detected:  
+here is the pageIndex:  37
+next page:  https://stackoverflow.com/questions/630453/what-is-the-difference-between-post-and-put-in-http
+response status:  200
+http
+new languages detected:  
+rest
+new languages detected:  
+post
+new languages detected:  
+put
+new languages detected:  
+here is the pageIndex:  38
+next page:  https://stackoverflow.com/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
+response status:  200
+javascript
+new languages detected:  javascript 
+file
+new languages detected:  javascript 
+import
+new languages detected:  javascript 
+include
+new languages detected:  javascript 
+here is the pageIndex:  39
+next page:  https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git
+response status:  200
+git
+new languages detected:  
+gitbranch
+new languages detected:  
+branchingandmerging
+new languages detected:  
+here is the pageIndex:  40
+next page:  https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting
+response status:  200
+css
+new languages detected:  css 
+crossbrowser
+new languages detected:  css 
+here is the pageIndex:  41
+next page:  https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var
+response status:  200
+javascript
+new languages detected:  javascript 
+scope
+new languages detected:  javascript 
+ecmascript6
+new languages detected:  javascript 
+var
+new languages detected:  javascript 
+let
+new languages detected:  javascript 
+here is the pageIndex:  42
+next page:  https://stackoverflow.com/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
+response status:  200
+bash
+new languages detected:  bash 
+directory
+new languages detected:  bash 
+here is the pageIndex:  43
+next page:  https://stackoverflow.com/questions/52704/how-do-i-discard-unstaged-changes-in-git
+response status:  200
+git
+new languages detected:  
+versioncontrol
+new languages detected:  
+here is the pageIndex:  44
+next page:  https://stackoverflow.com/questions/89228/how-do-i-execute-a-program-or-call-a-system-command
+response status:  200
+python
+new languages detected:  python 
+shell
+new languages detected:  python 
+terminal
+new languages detected:  python 
+subprocess
+new languages detected:  python 
+command
+new languages detected:  python 
+here is the pageIndex:  45
+next page:  https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
+response status:  200
+javascript
+new languages detected:  javascript 
+operators
+new languages detected:  javascript 
+equality
+new languages detected:  javascript 
+equalityoperator
+new languages detected:  javascript 
+identityoperator
+new languages detected:  javascript 
+here is the pageIndex:  46
+next page:  https://stackoverflow.com/questions/549/the-definitive-guide-to-form-based-website-authentication
+response status:  200
+forms
+new languages detected:  
+http
+new languages detected:  
+security
+new languages detected:  
+authentication
+new languages detected:  
+languageagnostic
+new languages detected:  
+here is the pageIndex:  47
+next page:  https://stackoverflow.com/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers
+response status:  200
+http
+new languages detected:  
+url
+new languages detected:  
+browser
+new languages detected:  
+here is the pageIndex:  48
+next page:  https://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+arrays
+new languages detected:  javascript 
+loops
+new languages detected:  javascript 
+foreach
+new languages detected:  javascript 
+iteration
+new languages detected:  javascript 
+here is the pageIndex:  49
+next page:  https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
+response status:  200
+here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=2
 response status:  200
 in here
 number of posts on this page:  50
 here are the questions: 
-/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
-/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
-/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
-/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
-/questions/231767/what-does-the-yield-keyword-do
-/questions/477816/what-is-the-correct-json-content-type
-/questions/5767325/how-can-i-remove-a-specific-item-from-an-array
-/questions/348170/how-do-i-undo-git-add-before-commit
-/questions/6591213/how-do-i-rename-a-local-git-branch
-/questions/1642028/what-is-the-operator-in-c-c
-/questions/79923/what-and-where-are-the-stack-and-heap
-/questions/244777/can-comments-be-used-in-json
-/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
-/questions/8318911/why-does-html-think-chucknorris-is-a-color
-/questions/178325/how-do-i-check-if-an-element-is-hidden-in-jquery
-/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
-/questions/1783405/how-do-i-check-out-a-remote-git-branch
-/questions/503093/how-do-i-redirect-to-another-webpage
-/questions/179123/how-to-modify-existing-unpushed-commit-messages
-/questions/61212/how-to-remove-local-untracked-files-from-the-current-git-working-tree
-/questions/111102/how-do-javascript-closures-work
-/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
-/questions/419163/what-does-if-name-main-do
-/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
-/questions/336859/var-functionname-function-vs-function-functionname
-/questions/40480/is-java-pass-by-reference-or-pass-by-value
-/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result
-/questions/394809/does-python-have-a-ternary-conditional-operator
-/questions/7074/what-is-the-difference-between-string-and-string-in-c
-/questions/1274057/how-can-i-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitign
-/questions/208105/how-do-i-remove-a-property-from-a-javascript-object
-/questions/100003/what-are-metaclasses-in-python
-/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux
-/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions
-/questions/14220321/how-to-return-the-response-from-an-asynchronous-call
-/questions/38987/how-do-i-merge-two-dictionaries-in-a-single-expression-take-union-of-dictionari
-/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp
-/questions/630453/what-is-the-difference-between-post-and-put-in-http
-/questions/950087/how-do-i-include-a-javascript-file-in-another-javascript-file
-/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git
-/questions/826782/how-to-disable-text-selection-highlighting
-/questions/762011/whats-the-difference-between-using-let-and-var
-/questions/59895/how-can-i-get-the-source-directory-of-a-bash-script-from-within-the-script-itsel
-/questions/52704/how-do-i-discard-unstaged-changes-in-git
-/questions/89228/how-do-i-execute-a-program-or-call-a-system-command
-/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
-/questions/549/the-definitive-guide-to-form-based-website-authentication
-/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers
-/questions/9329446/for-each-over-an-array-in-javascript
-/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
-next page:  https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
+/questions/215718/how-can-i-reset-or-revert-a-file-to-a-specific-revision
+/questions/46155/how-can-i-validate-an-email-address-in-javascript
+/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation
+/questions/161813/how-do-i-resolve-merge-conflicts-in-a-git-repository
+/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript
+/questions/273192/how-can-i-safely-create-a-nested-directory
+/questions/1144783/how-to-replace-all-occurrences-of-a-string-in-javascript
+/questions/2765421/how-do-i-push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too
+/questions/38549/what-is-the-difference-between-inner-join-and-outer-join
+/questions/901712/how-do-i-check-whether-a-checkbox-is-checked-in-jquery
+/questions/406230/regular-expression-to-match-a-line-that-doesnt-contain-a-word
+/questions/115983/how-can-i-add-a-blank-directory-to-a-git-repository
+/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
+/questions/3737139/reference-what-does-this-symbol-mean-in-php
+/questions/105034/how-to-create-a-guid-uuid
+/questions/4089430/how-to-determine-the-url-that-a-local-git-repository-was-originally-cloned-from
+/questions/114543/how-to-horizontally-center-an-element
+/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn
+/questions/4456438/how-to-pass-null-a-real-surname-to-a-soap-web-service-in-actionscript-3
+/questions/522563/accessing-the-index-in-for-loops
+/questions/11828270/how-do-i-exit-the-vim-editor
+/questions/952914/how-to-make-a-flat-list-out-of-a-list-of-lists
+/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
+/questions/237104/how-do-i-check-if-an-array-includes-a-value-in-javascript
+/questions/5189560/squash-my-last-x-commits-together-using-git
+/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet
+/questions/67699/how-to-clone-all-remote-branches-in-git
+/questions/221294/how-do-you-get-a-timestamp-in-javascript
+/questions/14994391/thinking-in-angularjs-if-i-have-a-jquery-background
+/questions/309424/how-do-i-read-convert-an-inputstream-into-a-string-in-java
+/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
+/questions/426258/setting-checked-for-a-checkbox-with-jquery
+/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github
+/questions/2669690/why-does-google-prepend-while1-to-their-json-responses
+/questions/134845/which-href-value-should-i-use-for-javascript-links-or-javascriptvoid0
+/questions/271526/avoiding-nullpointerexception-in-java
+/questions/5480258/how-to-delete-a-remote-tag
+/questions/136097/difference-between-staticmethod-and-classmethod
+/questions/388242/the-definitive-c-book-guide-and-list
+/questions/2610497/change-a-html5-inputs-placeholder-color-with-css
+/questions/509211/understanding-slicing
+/questions/1109022/how-to-close-hide-the-android-soft-keyboard-programmatically
+/questions/105372/how-to-enumerate-an-enum
+/questions/16047306/how-is-docker-different-from-a-virtual-machine
+/questions/40471/what-are-the-differences-between-a-hashmap-and-a-hashtable-in-java
+/questions/59838/how-can-i-check-if-a-directory-exists-in-a-bash-shell-script
+/questions/671118/what-exactly-is-restful-programming
+/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
+/questions/14415881/how-can-i-pair-socks-from-a-pile-efficiently
+/questions/1260748/how-do-i-remove-a-submodule
+next page:  https://stackoverflow.com/questions/215718/how-can-i-reset-or-revert-a-file-to-a-specific-revision
 response status:  200
-here:::::
-if (data[c] >= 128)
-    sum += data[c];
-T = branch taken
-N = branch not taken
-
-data[] = 0, 1, 2, 3, 4, ... 126, 127, 128, 129, 130, ... 250, 251, 252, ...
-branch = N  N  N  N  N  ...   N    N    T    T    T  ...   T    T    T  ...
-
-       = NNNNNNNNNNNN ... NNNNNNNTTTTTTTTT ... TTTTTTTTTT  (easy to predict)
-data[] = 226, 185, 125, 158, 198, 144, 217, 79, 202, 118,  14, 150, 177, 182, ...
-branch =   T,   T,   N,   T,   T,   T,   T,  N,   T,   N,   N,   T,   T,   T  ...
-
-       = TTNTTTTNTNNTTT ...   (completely random - impossible to predict)
-if (data[c] >= 128)
-    sum += data[c];
-int t = (data[c] - 128) >> 31;
-sum += ~t & data[c];
-data[]-O3-ftree-vectorizecmovaddcmov/Ox
+git
+new languages detected:  
+versioncontrol
+new languages detected:  
+gitcheckout
+new languages detected:  
 here is the pageIndex:  1
-next page:  https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+next page:  https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
 response status:  200
-here:::::
-$ git commit -m "Something terribly misguided" # (0: Your Accident)
-$ git reset HEAD~                              # (1)
-[ edit files as necessary ]                    # (2)
-$ git add .                                    # (3)
-$ git commit -c ORIG_HEAD                      # (4)
-git resetgit addreset.git/ORIG_HEADcommit-c ORIG_HEAD-Ccommit --amendgit push origin main --force[-with-lease]--force--force-with-leasegit reflogHEAD~HEAD~1git checkout theRightBranchgit reset --soft HEAD^git reset --soft HEAD~1--softgit reset HEAD~1zsh: no matches found: HEAD^git reset --soft HEAD\^git commit -a-a--soft--mixedgit commit -m "Something terribly misguided"
+javascript
+new languages detected:  javascript 
+html
+new languages detected:  javascript html 
+emailvalidation
+new languages detected:  javascript html 
 here is the pageIndex:  2
-next page:  https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
+next page:  https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation
 response status:  200
-here:::::
-$ git push -d <remote_name> <branchname>
-$ git branch -d <branchname>
-<remote_name>origin$ git branch -d <branch_name>
-$ git branch -D <branch_name>
--d--delete-D--delete --forceman git-branchgit branch -d-f$ git push <remote_name> --delete <branch_name>
-$ git push <remote_name> :<branch_name>
-git push-d--deletegit push [remotename] :[branch]$ git push origin :serverfix
-To git@github.com:schacon/simplegit.git
- - [deleted]         serverfix
-git push [remotename] [localbranch]:[remotebranch][localbranch][remotebranch]git push origin: bugfix# Fetch changes from all remotes and locally delete 
-# remote deleted branches/tags etc
-# --prune will do the job :-;
-git fetch --all --prune
-git fetch --all --prunegit branch -dgit push origin --deletegit branch -agit fetch --all --prunegit branch -agit branch -rgit remote show origingit branch -D Branch_Name
+algorithm
+new languages detected:  
+complexitytheory
+new languages detected:  
+computerscience
+new languages detected:  
+bigo
+new languages detected:  
+timecomplexity
+new languages detected:  
 here is the pageIndex:  3
-next page:  https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch
+next page:  https://stackoverflow.com/questions/161813/how-do-i-resolve-merge-conflicts-in-a-git-repository
 response status:  200
-here:::::
-git pullgit fetchgit mergegit fetchrefs/remotes/<remote>/refs/headsgit fetchgit pullgit pullgit pullgit fetchgit merge FETCH_HEADgit pullgit remotegit pull/home/alice/git fetch /home/bobgit mergepullfetchmergemergepull
+git
+new languages detected:  
+gitmerge
+new languages detected:  
+mergeconflictresolution
+new languages detected:  
+gitmergeconflict
+new languages detected:  
 here is the pageIndex:  4
-next page:  https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+next page:  https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript
 response status:  200
-here:::::
-yield>>> mylist = [1, 2, 3]
->>> for i in mylist:
-...    print(i)
-1
-2
-3
-mylist>>> mylist = [x*x for x in range(3)]
->>> for i in mylist:
-...    print(i)
-0
-1
-4
-for... in...listsstrings>>> mygenerator = (x*x for x in range(3))
->>> for i in mygenerator:
-...    print(i)
-0
-1
-4
-()[]for i in mygeneratoryieldreturn>>> def create_generator():
-...    mylist = range(3)
-...    for i in mylist:
-...        yield i*i
-...
->>> mygenerator = create_generator() # create a generator
->>> print(mygenerator) # mygenerator is an object!
-<generator object create_generator at 0xb7555c34>
->>> for i in mygenerator:
-...     print(i)
-0
-1
-4
-yieldforforyieldyield"if/else"# Here you create the method of the node object that will return the generator
-def _get_child_candidates(self, distance, min_dist, max_dist):
-
-    # Here is the code that will be called each time you use the generator object:
-
-    # If there is still a child of the node object on its left
-    # AND if the distance is ok, return the next child
-    if self._leftchild and distance - max_dist < self._median:
-        yield self._leftchild
-
-    # If there is still a child of the node object on its right
-    # AND if the distance is ok, return the next child
-    if self._rightchild and distance + max_dist >= self._median:
-        yield self._rightchild
-
-    # If the function arrives here, the generator will be considered empty
-    # there is no more than two values: the left and the right children
-# Create an empty list and a list with the current object reference
-result, candidates = list(), [self]
-
-# Loop on candidates (they contain only one element at the beginning)
-while candidates:
-
-    # Get the last candidate and remove it from the list
-    node = candidates.pop()
-
-    # Get the distance between obj and the candidate
-    distance = node._get_dist(obj)
-
-    # If distance is ok, then you can fill the result
-    if distance <= max_dist and distance >= min_dist:
-        result.extend(node._values)
-
-    # Add the children of the candidate in the candidate's list
-    # so the loop will keep running until it will have looked
-    # at all the children of the children of the children, etc. of the candidate
-    candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))
-
-return result
-candidates.extend(node._get_child_candidates(distance, min_dist, max_dist))whileextend()>>> a = [1, 2]
->>> b = [3, 4]
->>> a.extend(b)
->>> print(a)
-[1, 2, 3, 4]
->>> class Bank(): # Let's create a bank, building ATMs
-...    crisis = False
-...    def create_atm(self):
-...        while not self.crisis:
-...            yield "$100"
->>> hsbc = Bank() # When everything's ok the ATM gives you as much as you want
->>> corner_street_atm = hsbc.create_atm()
->>> print(corner_street_atm.next())
-$100
->>> print(corner_street_atm.next())
-$100
->>> print([corner_street_atm.next() for cash in range(5)])
-['$100', '$100', '$100', '$100', '$100']
->>> hsbc.crisis = True # Crisis is coming, no more money!
->>> print(corner_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> wall_street_atm = hsbc.create_atm() # It's even true for new ATMs
->>> print(wall_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> hsbc.crisis = False # The trouble is, even post-crisis the ATM remains empty
->>> print(corner_street_atm.next())
-<type 'exceptions.StopIteration'>
->>> brand_new_atm = hsbc.create_atm() # Build a new one to get back in business
->>> for cash in brand_new_atm:
-...    print cash
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-$100
-...
-print(corner_street_atm.__next__())print(next(corner_street_atm))Map / Zipimport itertools>>> horses = [1, 2, 3, 4]
->>> races = itertools.permutations(horses)
->>> print(races)
-<itertools.permutations object at 0xb754f1dc>
->>> print(list(itertools.permutations(horses)))
-[(1, 2, 3, 4),
- (1, 2, 4, 3),
- (1, 3, 2, 4),
- (1, 3, 4, 2),
- (1, 4, 2, 3),
- (1, 4, 3, 2),
- (2, 1, 3, 4),
- (2, 1, 4, 3),
- (2, 3, 1, 4),
- (2, 3, 4, 1),
- (2, 4, 1, 3),
- (2, 4, 3, 1),
- (3, 1, 2, 4),
- (3, 1, 4, 2),
- (3, 2, 1, 4),
- (3, 2, 4, 1),
- (3, 4, 1, 2),
- (3, 4, 2, 1),
- (4, 1, 2, 3),
- (4, 1, 3, 2),
- (4, 2, 1, 3),
- (4, 2, 3, 1),
- (4, 3, 1, 2),
- (4, 3, 2, 1)]
-__iter__()__next__()foryieldyieldyieldyieldyield()[]()returnreturnyield
+javascript
+new languages detected:  javascript 
+object
+new languages detected:  javascript 
+clone
+new languages detected:  javascript 
 here is the pageIndex:  5
-next page:  https://stackoverflow.com/questions/477816/what-is-the-correct-json-content-type
+next page:  https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
+response status:  200
+python
+new languages detected:  python 
+exception
+new languages detected:  python 
+path
+new languages detected:  python 
+directory
+new languages detected:  python 
+operatingsystem
+new languages detected:  python 
+here is the pageIndex:  6
+next page:  https://stackoverflow.com/questions/1144783/how-to-replace-all-occurrences-of-a-string-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+string
+new languages detected:  javascript 
+replace
+new languages detected:  javascript 
+here is the pageIndex:  7
+next page:  https://stackoverflow.com/questions/2765421/how-do-i-push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too
+response status:  200
+git
+new languages detected:  
+repository
+new languages detected:  
+gitbranch
+new languages detected:  
+gitpush
+new languages detected:  
+gitremote
+new languages detected:  
+here is the pageIndex:  8
+next page:  https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join
+response status:  200
+sql
+new languages detected:  sql 
+database
+new languages detected:  sql 
+join
+new languages detected:  sql 
+innerjoin
+new languages detected:  sql 
+outerjoin
+new languages detected:  sql 
+here is the pageIndex:  9
+next page:  https://stackoverflow.com/questions/901712/how-do-i-check-whether-a-checkbox-is-checked-in-jquery
+response status:  200
+javascript
+new languages detected:  javascript 
+jquery
+new languages detected:  javascript 
+html
+new languages detected:  javascript html 
+checkbox
+new languages detected:  javascript html 
+here is the pageIndex:  10
+next page:  https://stackoverflow.com/questions/406230/regular-expression-to-match-a-line-that-doesnt-contain-a-word
+response status:  200
+regex
+new languages detected:  
+patternmatching
+new languages detected:  
+regexnegation
+new languages detected:  
+here is the pageIndex:  11
+next page:  https://stackoverflow.com/questions/115983/how-can-i-add-a-blank-directory-to-a-git-repository
+response status:  200
+git
+new languages detected:  
+directory
+new languages detected:  
+gitadd
+new languages detected:  
+here is the pageIndex:  12
+next page:  https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
+response status:  200
+git
+new languages detected:  
+undo
+new languages detected:  
+here is the pageIndex:  13
+next page:  https://stackoverflow.com/questions/3737139/reference-what-does-this-symbol-mean-in-php
+response status:  200
+php
+new languages detected:  php 
+arguments
+new languages detected:  php 
+operators
+new languages detected:  php 
+symbols
+new languages detected:  php 
+semantics
+new languages detected:  php 
+here is the pageIndex:  14
+next page:  https://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid
+response status:  200
+javascript
+new languages detected:  javascript 
+guid
+new languages detected:  javascript 
+uuid
+new languages detected:  javascript 
+here is the pageIndex:  15
+next page:  https://stackoverflow.com/questions/4089430/how-to-determine-the-url-that-a-local-git-repository-was-originally-cloned-from
+response status:  200
+git
+new languages detected:  
+github
+new languages detected:  
+gitremote
+new languages detected:  
+here is the pageIndex:  16
+next page:  https://stackoverflow.com/questions/114543/how-to-horizontally-center-an-element
+response status:  200
+html
+new languages detected:  html 
+css
+new languages detected:  html css 
+alignment
+new languages detected:  html css 
+centering
+new languages detected:  html css 
+here is the pageIndex:  17
+next page:  https://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn
+response status:  200
+http
+new languages detected:  
+url
+new languages detected:  
+uri
+new languages detected:  
+urn
+new languages detected:  
+rfc3986
+new languages detected:  
+here is the pageIndex:  18
+next page:  https://stackoverflow.com/questions/4456438/how-to-pass-null-a-real-surname-to-a-soap-web-service-in-actionscript-3
+response status:  200
+apacheflex
+new languages detected:  
+actionscript
+new languages detected:  
+soap
+new languages detected:  
+coldfusion
+new languages detected:  
+wsdl
+new languages detected:  
+here is the pageIndex:  19
+next page:  https://stackoverflow.com/questions/522563/accessing-the-index-in-for-loops
+response status:  200
+python
+new languages detected:  python 
+loops
+new languages detected:  python 
+list
+new languages detected:  python 
+here is the pageIndex:  20
+next page:  https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor
+response status:  200
+vim
+new languages detected:  
+vi
+new languages detected:  
+here is the pageIndex:  21
+next page:  https://stackoverflow.com/questions/952914/how-to-make-a-flat-list-out-of-a-list-of-lists
+response status:  200
+python
+new languages detected:  python 
+list
+new languages detected:  python 
+multidimensionalarray
+new languages detected:  python 
+flatten
+new languages detected:  python 
+here is the pageIndex:  22
+next page:  https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+string
+new languages detected:  javascript 
+letter
+new languages detected:  javascript 
+capitalize
+new languages detected:  javascript 
+here is the pageIndex:  23
+next page:  https://stackoverflow.com/questions/237104/how-do-i-check-if-an-array-includes-a-value-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+arrays
+new languages detected:  javascript 
+algorithm
+new languages detected:  javascript 
+timecomplexity
+new languages detected:  javascript 
+javascriptobjects
+new languages detected:  javascript 
+here is the pageIndex:  24
+next page:  https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git
+response status:  200
+git
+new languages detected:  
+rebase
+new languages detected:  
+squash
+new languages detected:  
+gitsquash
+new languages detected:  
+here is the pageIndex:  25
+next page:  https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet
+response status:  200
+git
+new languages detected:  
+undo
+new languages detected:  
+gitmerge
+new languages detected:  
+here is the pageIndex:  26
+next page:  https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git
+response status:  200
+git
+new languages detected:  
+gitbranch
+new languages detected:  
+gitclone
+new languages detected:  
+remotebranch
+new languages detected:  
+here is the pageIndex:  27
+next page:  https://stackoverflow.com/questions/221294/how-do-you-get-a-timestamp-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+datetime
+new languages detected:  javascript 
+timestamp
+new languages detected:  javascript 
+datearithmetic
+new languages detected:  javascript 
+here is the pageIndex:  28
+next page:  https://stackoverflow.com/questions/14994391/thinking-in-angularjs-if-i-have-a-jquery-background
+response status:  200
+javascript
+new languages detected:  javascript 
+jquery
+new languages detected:  javascript 
+angularjs
+new languages detected:  javascript 
+here is the pageIndex:  29
+next page:  https://stackoverflow.com/questions/309424/how-do-i-read-convert-an-inputstream-into-a-string-in-java
+response status:  200
+java
+new languages detected:  java 
+string
+new languages detected:  java 
+io
+new languages detected:  java 
+stream
+new languages detected:  java 
+inputstream
+new languages detected:  java 
+here is the pageIndex:  30
+next page:  https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
+response status:  200
+nodejs
+new languages detected:  
+npm
+new languages detected:  
+packagejson
+new languages detected:  
+semanticversioning
+new languages detected:  
+here is the pageIndex:  31
+next page:  https://stackoverflow.com/questions/426258/setting-checked-for-a-checkbox-with-jquery
+response status:  200
+javascript
+new languages detected:  javascript 
+jquery
+new languages detected:  javascript 
+checkbox
+new languages detected:  javascript 
+selected
+new languages detected:  javascript 
+checked
+new languages detected:  javascript 
+here is the pageIndex:  32
+next page:  https://stackoverflow.com/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github
+response status:  200
+git
+new languages detected:  
+github
+new languages detected:  
+synchronization
+new languages detected:  
+repository
+new languages detected:  
+gitfork
+new languages detected:  
+here is the pageIndex:  33
+next page:  https://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses
+response status:  200
+javascript
+new languages detected:  javascript 
+json
+new languages detected:  javascript 
+ajax
+new languages detected:  javascript 
+security
+new languages detected:  javascript 
+here is the pageIndex:  34
+next page:  https://stackoverflow.com/questions/134845/which-href-value-should-i-use-for-javascript-links-or-javascriptvoid0
+response status:  200
+javascript
+new languages detected:  javascript 
+html
+new languages detected:  javascript html 
+performance
+new languages detected:  javascript html 
+optimization
+new languages detected:  javascript html 
+href
+new languages detected:  javascript html 
+here is the pageIndex:  35
+next page:  https://stackoverflow.com/questions/271526/avoiding-nullpointerexception-in-java
+response status:  200
+java
+new languages detected:  java 
+nullpointerexception
+new languages detected:  java 
+null
+new languages detected:  java 
+here is the pageIndex:  36
+next page:  https://stackoverflow.com/questions/5480258/how-to-delete-a-remote-tag
+response status:  200
+git
+new languages detected:  
+gittag
+new languages detected:  
+here is the pageIndex:  37
+next page:  https://stackoverflow.com/questions/136097/difference-between-staticmethod-and-classmethod
+response status:  200
+python
+new languages detected:  python 
+oop
+new languages detected:  python 
+methods
+new languages detected:  python 
+pythondecorators
+new languages detected:  python 
+here is the pageIndex:  38
+next page:  https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
+response status:  200
+c++faq
+new languages detected:  
+c++
+new languages detected:  c++ 
+c++faq
+new languages detected:  c++ 
+here is the pageIndex:  39
+next page:  https://stackoverflow.com/questions/2610497/change-a-html5-inputs-placeholder-color-with-css
+response status:  200
+css
+new languages detected:  css 
+html
+new languages detected:  css html 
+placeholder
+new languages detected:  css html 
+htmlinput
+new languages detected:  css html 
+here is the pageIndex:  40
+next page:  https://stackoverflow.com/questions/509211/understanding-slicing
+response status:  200
+python
+new languages detected:  python 
+slice
+new languages detected:  python 
+sequence
+new languages detected:  python 
+here is the pageIndex:  41
+next page:  https://stackoverflow.com/questions/1109022/how-to-close-hide-the-android-soft-keyboard-programmatically
+response status:  200
+android
+new languages detected:  
+androidedittext
+new languages detected:  
+androidsoftkeyboard
+new languages detected:  
+androidinputmethod
+new languages detected:  
+softkeyboard
+new languages detected:  
+here is the pageIndex:  42
+next page:  https://stackoverflow.com/questions/105372/how-to-enumerate-an-enum
+response status:  200
+c#
+new languages detected:  c# 
+net
+new languages detected:  c# 
+loops
+new languages detected:  c# 
+enums
+new languages detected:  c# 
+enumeration
+new languages detected:  c# 
+here is the pageIndex:  43
+next page:  https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine
+response status:  200
+docker
+new languages detected:  
+virtualmachine
+new languages detected:  
+here is the pageIndex:  44
+next page:  https://stackoverflow.com/questions/40471/what-are-the-differences-between-a-hashmap-and-a-hashtable-in-java
+response status:  200
+java
+new languages detected:  java 
+collections
+new languages detected:  java 
+hashmap
+new languages detected:  java 
+hashtable
+new languages detected:  java 
+here is the pageIndex:  45
+next page:  https://stackoverflow.com/questions/59838/how-can-i-check-if-a-directory-exists-in-a-bash-shell-script
+response status:  200
+bash
+new languages detected:  bash 
+shell
+new languages detected:  bash 
+unix
+new languages detected:  bash 
+posix
+new languages detected:  bash 
+here is the pageIndex:  46
+next page:  https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming
+response status:  200
+rest
+new languages detected:  
+http
+new languages detected:  
+architecture
+new languages detected:  
+definition
+new languages detected:  
+here is the pageIndex:  47
+next page:  https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+clipboard
+new languages detected:  javascript 
+copypaste
+new languages detected:  javascript 
+here is the pageIndex:  48
+next page:  https://stackoverflow.com/questions/14415881/how-can-i-pair-socks-from-a-pile-efficiently
+response status:  200
+algorithm
+new languages detected:  
+sorting
+new languages detected:  
+languageagnostic
+new languages detected:  
+matching
+new languages detected:  
+here is the pageIndex:  49
+next page:  https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
+response status:  200
+here's the new list of next pages:  https://stackoverflow.com/questions?tab=votes&page=3
+response status:  200
+in here
+number of posts on this page:  50
+here are the questions: 
+/questions/2334712/how-do-i-update-from-a-select-in-sql-server
+/questions/176918/finding-the-index-of-an-item-in-a-list
+/questions/157944/create-arraylist-from-array
+/questions/9081/grep-a-file-but-show-several-surrounding-lines
+/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
+/questions/679915/how-do-i-test-for-an-empty-javascript-object
+/questions/13375357/proper-use-cases-for-android-usermanager-isuseragoat
+/questions/3294889/iterating-over-dictionaries-using-for-loops
+/questions/1338728/delete-commits-from-a-branch-in-git
+/questions/784929/what-is-the-not-not-operator-in-javascript
+/questions/520650/make-an-existing-git-branch-track-a-remote-branch
+/questions/134882/undoing-a-git-rebase
+/questions/201323/how-can-i-validate-an-email-address-using-a-regular-expression
+/questions/8710619/why-dont-javas-compound-assignment-operators-require-casting
+/questions/586182/how-to-insert-an-item-into-an-array-at-a-specific-index-javascript
+/questions/1014861/is-there-a-css-parent-selector
+/questions/46898/how-do-i-efficiently-iterate-over-each-entry-in-a-java-map
+/questions/638975/how-do-i-tell-if-a-regular-file-does-not-exist-in-bash
+/questions/3010840/loop-through-an-array-in-javascript
+/questions/8881291/why-is-char-preferred-over-string-for-passwords
+/questions/1098040/checking-if-a-key-exists-in-a-javascript-object
+/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in
+/questions/1066589/iterate-through-a-hashmap
+/questions/29482/how-can-i-cast-int-to-enum
+/questions/423379/using-global-variables-in-a-function
+/questions/1129216/sort-array-of-objects-by-string-property-value
+/questions/1911109/how-do-i-clone-a-specific-git-branch
+/questions/11832914/how-to-round-to-at-most-2-decimal-places-if-necessary
+/questions/4181861/message-src-refspec-master-does-not-match-any-when-pushing-commits-in-git
+/questions/588004/is-floating-point-math-broken
+/questions/1394797/move-existing-uncommitted-work-to-a-new-branch-in-git
+/questions/3437059/does-python-have-a-string-contains-substring-method
+/questions/154059/how-can-i-check-for-an-empty-undefined-null-string-in-javascript
+/questions/6470651/how-can-i-create-a-memory-leak-in-java
+/questions/339923/set-cellpadding-and-cellspacing-in-css
+/questions/1519006/how-do-you-create-a-remote-git-branch
+/questions/3040833/stash-only-one-file-out-of-multiple-files-that-have-changed-with-git
+/questions/415511/how-do-i-get-the-current-time
+/questions/278192/view-the-change-history-of-a-file-using-git-versioning
+/questions/1143796/remove-a-file-from-a-git-repository-without-deleting-it-from-the-local-filesyste
+/questions/728360/how-do-i-correctly-clone-a-javascript-object
+/questions/7172784/how-do-i-post-json-data-with-curl
+/questions/1554099/why-is-the-android-emulator-so-slow-how-can-we-speed-up-the-android-emulator
+/questions/215497/what-is-the-difference-between-public-protected-package-private-and-private-in
+/questions/6470428/catch-multiple-exceptions-in-one-line-except-block
+/questions/3207219/how-do-i-list-all-files-of-a-directory
+/questions/1034621/get-the-current-url-with-javascript
+/questions/322715/when-to-use-linkedlist-over-arraylist-in-java
+/questions/130794/what-is-dependency-injection
+/questions/6245570/how-to-get-the-current-branch-name-in-git
+next page:  https://stackoverflow.com/questions/2334712/how-do-i-update-from-a-select-in-sql-server
+response status:  200
+sql
+new languages detected:  sql 
+sqlserver
+new languages detected:  sql 
+tsql
+new languages detected:  sql 
+select
+new languages detected:  sql 
+sqlupdate
+new languages detected:  sql 
+here is the pageIndex:  1
+next page:  https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list
+response status:  200
+python
+new languages detected:  python 
+list
+new languages detected:  python 
+indexing
+new languages detected:  python 
+here is the pageIndex:  2
+next page:  https://stackoverflow.com/questions/157944/create-arraylist-from-array
+response status:  200
+java
+new languages detected:  java 
+arrays
+new languages detected:  java 
+arraylist
+new languages detected:  java 
+typeconversion
+new languages detected:  java 
+here is the pageIndex:  3
+next page:  https://stackoverflow.com/questions/9081/grep-a-file-but-show-several-surrounding-lines
+response status:  200
+search
+new languages detected:  
+logging
+new languages detected:  
+grep
+new languages detected:  
+commandlineinterface
+new languages detected:  
+here is the pageIndex:  4
+next page:  https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
+response status:  200
+java
+new languages detected:  java 
+random
+new languages detected:  java 
+integer
+new languages detected:  java 
+java8
+new languages detected:  java 
+here is the pageIndex:  5
+next page:  https://stackoverflow.com/questions/679915/how-do-i-test-for-an-empty-javascript-object
+response status:  200
+javascript
+new languages detected:  javascript 
+javascriptobjects
+new languages detected:  javascript 
+here is the pageIndex:  6
+next page:  https://stackoverflow.com/questions/13375357/proper-use-cases-for-android-usermanager-isuseragoat
+response status:  200
+java
+new languages detected:  java 
+android
+new languages detected:  java 
+usermanager
+new languages detected:  java 
+here is the pageIndex:  7
+next page:  https://stackoverflow.com/questions/3294889/iterating-over-dictionaries-using-for-loops
+response status:  200
+python
+new languages detected:  python 
+dictionary
+new languages detected:  python 
+here is the pageIndex:  8
+next page:  https://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git
+response status:  200
+git
+new languages detected:  
+gitrebase
+new languages detected:  
+gitreset
+new languages detected:  
+here is the pageIndex:  9
+next page:  https://stackoverflow.com/questions/784929/what-is-the-not-not-operator-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+operators
+new languages detected:  javascript 
+here is the pageIndex:  10
+next page:  https://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch
+response status:  200
+git
+new languages detected:  
+branch
+new languages detected:  
+gitbranch
+new languages detected:  
+here is the pageIndex:  11
+next page:  https://stackoverflow.com/questions/134882/undoing-a-git-rebase
+response status:  200
+git
+new languages detected:  
+rebase
+new languages detected:  
+gitrebase
+new languages detected:  
+undo
+new languages detected:  
+here is the pageIndex:  12
+next page:  https://stackoverflow.com/questions/201323/how-can-i-validate-an-email-address-using-a-regular-expression
+response status:  200
+regex
+new languages detected:  
+here is the pageIndex:  13
+next page:  https://stackoverflow.com/questions/8710619/why-dont-javas-compound-assignment-operators-require-casting
+response status:  200
+java
+new languages detected:  java 
+casting
+new languages detected:  java 
+operators
+new languages detected:  java 
+variableassignment
+new languages detected:  java 
+assignmentoperator
+new languages detected:  java 
+here is the pageIndex:  14
+next page:  https://stackoverflow.com/questions/586182/how-to-insert-an-item-into-an-array-at-a-specific-index-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+arrays
+new languages detected:  javascript 
+here is the pageIndex:  15
+next page:  https://stackoverflow.com/questions/1014861/is-there-a-css-parent-selector
+response status:  200
+css
+new languages detected:  css 
+cssselectors
+new languages detected:  css 
+here is the pageIndex:  16
+next page:  https://stackoverflow.com/questions/46898/how-do-i-efficiently-iterate-over-each-entry-in-a-java-map
+response status:  200
+java
+new languages detected:  java 
+dictionary
+new languages detected:  java 
+collections
+new languages detected:  java 
+iteration
+new languages detected:  java 
+here is the pageIndex:  17
+next page:  https://stackoverflow.com/questions/638975/how-do-i-tell-if-a-regular-file-does-not-exist-in-bash
+response status:  200
+bash
+new languages detected:  bash 
+fileio
+new languages detected:  bash 
+scripting
+new languages detected:  bash 
+here is the pageIndex:  18
+next page:  https://stackoverflow.com/questions/3010840/loop-through-an-array-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+arrays
+new languages detected:  javascript 
+loops
+new languages detected:  javascript 
+forloop
+new languages detected:  javascript 
+here is the pageIndex:  19
+next page:  https://stackoverflow.com/questions/8881291/why-is-char-preferred-over-string-for-passwords
+response status:  200
+java
+new languages detected:  java 
+string
+new languages detected:  java 
+security
+new languages detected:  java 
+passwords
+new languages detected:  java 
+char
+new languages detected:  java 
+here is the pageIndex:  20
+next page:  https://stackoverflow.com/questions/1098040/checking-if-a-key-exists-in-a-javascript-object
+response status:  200
+javascript
+new languages detected:  javascript 
+arrays
+new languages detected:  javascript 
+object
+new languages detected:  javascript 
+here is the pageIndex:  21
+next page:  https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in
+response status:  200
+c++
+new languages detected:  c++ 
+pointers
+new languages detected:  c++ 
+reference
+new languages detected:  c++ 
+c++faq
+new languages detected:  c++ 
+here is the pageIndex:  22
+next page:  https://stackoverflow.com/questions/1066589/iterate-through-a-hashmap
+response status:  200
+java
+new languages detected:  java 
+loops
+new languages detected:  java 
+hashmap
+new languages detected:  java 
+iteration
+new languages detected:  java 
+here is the pageIndex:  23
+next page:  https://stackoverflow.com/questions/29482/how-can-i-cast-int-to-enum
+response status:  200
+c#
+new languages detected:  c# 
+enums
+new languages detected:  c# 
+casting
+new languages detected:  c# 
+int
+new languages detected:  c# 
+here is the pageIndex:  24
+next page:  https://stackoverflow.com/questions/423379/using-global-variables-in-a-function
+response status:  200
+python
+new languages detected:  python 
+globalvariables
+new languages detected:  python 
+scope
+new languages detected:  python 
+here is the pageIndex:  25
+next page:  https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
+response status:  200
+javascript
+new languages detected:  javascript 
+arrays
+new languages detected:  javascript 
+sorting
+new languages detected:  javascript 
+comparison
+new languages detected:  javascript 
+here is the pageIndex:  26
+next page:  https://stackoverflow.com/questions/1911109/how-do-i-clone-a-specific-git-branch
+response status:  200
+git
+new languages detected:  
+gitbranch
+new languages detected:  
+gitclone
+new languages detected:  
+here is the pageIndex:  27
+next page:  https://stackoverflow.com/questions/11832914/how-to-round-to-at-most-2-decimal-places-if-necessary
+response status:  200
+javascript
+new languages detected:  javascript 
+rounding
+new languages detected:  javascript 
+decimalpoint
+new languages detected:  javascript 
+here is the pageIndex:  28
+next page:  https://stackoverflow.com/questions/4181861/message-src-refspec-master-does-not-match-any-when-pushing-commits-in-git
+response status:  200
+git
+new languages detected:  
+gitcommit
+new languages detected:  
+gitclone
+new languages detected:  
+gitadd
+new languages detected:  
+gitrefspec
+new languages detected:  
+here is the pageIndex:  29
+next page:  https://stackoverflow.com/questions/588004/is-floating-point-math-broken
+response status:  200
+math
+new languages detected:  
+languageagnostic
+new languages detected:  
+floatingpoint
+new languages detected:  
+floatingaccuracy
+new languages detected:  
+here is the pageIndex:  30
+next page:  https://stackoverflow.com/questions/1394797/move-existing-uncommitted-work-to-a-new-branch-in-git
+response status:  200
+git
+new languages detected:  
+gitbranch
+new languages detected:  
+gitstash
+new languages detected:  
+gitreset
+new languages detected:  
+here is the pageIndex:  31
+next page:  https://stackoverflow.com/questions/3437059/does-python-have-a-string-contains-substring-method
+response status:  200
+python
+new languages detected:  python 
+string
+new languages detected:  python 
+substring
+new languages detected:  python 
+contains
+new languages detected:  python 
+here is the pageIndex:  32
+next page:  https://stackoverflow.com/questions/154059/how-can-i-check-for-an-empty-undefined-null-string-in-javascript
+response status:  200
+javascript
+new languages detected:  javascript 
+null
+new languages detected:  javascript 
+isempty
+new languages detected:  javascript 
+here is the pageIndex:  33
+next page:  https://stackoverflow.com/questions/6470651/how-can-i-create-a-memory-leak-in-java
+response status:  200
+java
+new languages detected:  java 
+memory
+new languages detected:  java 
+memoryleaks
+new languages detected:  java 
+here is the pageIndex:  34
+next page:  https://stackoverflow.com/questions/339923/set-cellpadding-and-cellspacing-in-css
+response status:  200
+html
+new languages detected:  html 
+css
+new languages detected:  html css 
+htmltable
+new languages detected:  html css 
+alignment
+new languages detected:  html css 
+here is the pageIndex:  35
+next page:  https://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch
+response status:  200
+git
+new languages detected:  
+branch
+new languages detected:  
+gitbranch
+new languages detected:  
+here is the pageIndex:  36
+next page:  https://stackoverflow.com/questions/3040833/stash-only-one-file-out-of-multiple-files-that-have-changed-with-git
+response status:  200
+git
+new languages detected:  
+gitstash
+new languages detected:  
+here is the pageIndex:  37
+next page:  https://stackoverflow.com/questions/415511/how-do-i-get-the-current-time
+response status:  200
+python
+new languages detected:  python 
+datetime
+new languages detected:  python 
+time
+new languages detected:  python 
+here is the pageIndex:  38
+next page:  https://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning
+response status:  200
+git
+new languages detected:  
+gitlog
+new languages detected:  
+here is the pageIndex:  39
+next page:  https://stackoverflow.com/questions/1143796/remove-a-file-from-a-git-repository-without-deleting-it-from-the-local-filesyste
+response status:  200
+git
+new languages detected:  
+repository
+new languages detected:  
+remoteserver
+new languages detected:  
+deletefile
+new languages detected:  
+gitrm
+new languages detected:  
+here is the pageIndex:  40
+next page:  https://stackoverflow.com/questions/728360/how-do-i-correctly-clone-a-javascript-object
+response status:  200
+javascript
+new languages detected:  javascript 
+clone
+new languages detected:  javascript 
+javascriptobjects
+new languages detected:  javascript 
+here is the pageIndex:  41
+next page:  https://stackoverflow.com/questions/7172784/how-do-i-post-json-data-with-curl
+response status:  200
+json
+new languages detected:  
+rest
+new languages detected:  
+springmvc
+new languages detected:  
+curl
+new languages detected:  
+httpheaders
+new languages detected:  
+here is the pageIndex:  42
+next page:  https://stackoverflow.com/questions/1554099/why-is-the-android-emulator-so-slow-how-can-we-speed-up-the-android-emulator
+response status:  200
+android
+new languages detected:  
+performance
+new languages detected:  
+androidemulator
+new languages detected:  
+genymotion
+new languages detected:  
+qemu
+new languages detected:  
+here is the pageIndex:  43
+next page:  https://stackoverflow.com/questions/215497/what-is-the-difference-between-public-protected-package-private-and-private-in
+response status:  200
+java
+new languages detected:  java 
+private
+new languages detected:  java 
+public
+new languages detected:  java 
+protected
+new languages detected:  java 
+accessmodifiers
+new languages detected:  java 
+here is the pageIndex:  44
+next page:  https://stackoverflow.com/questions/6470428/catch-multiple-exceptions-in-one-line-except-block
+response status:  200
+python
+new languages detected:  python 
+exception
+new languages detected:  python 
+exceptionhandling
+new languages detected:  python 
+here is the pageIndex:  45
+next page:  https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
