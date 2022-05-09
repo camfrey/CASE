@@ -124,7 +124,7 @@ class CaseSpider(scrapy.Spider):
         comment = ""
         fullDoc = []
         voteList = []
-        allLanguages = {'javascript','python','java','c#','php','html',"c++","css","sql","r",'c',"swift","ruby","xml","vba","typescript","bash","scala","powershell","matlab","kotlin","perl","dart","go","haskell","rust"}
+        allLanguages = ['javascript','python','java','c#','php','html',"c++","css","sql","r","swift","ruby","xml","vba","typescript","bash","scala","powershell","matlab","kotlin","perl","dart","go","haskell","rust",'c']
         languages = ""
 
 
@@ -194,10 +194,12 @@ class CaseSpider(scrapy.Spider):
         for item in zip(tags):
             if(i >= tagLength / 2):
                 break
-            stripped = re.sub(r'[^a-zA-Z0-9]', '', str(item))
+            stripped = re.sub(r'[^a-zA-Z0-9\#\+]', '', str(item))
             if(stripped in allLanguages):
                 languages += stripped + " "
             i += 1
+            print(stripped)
+            print("new languages detected: ",languages)
 
 
         #go through to parse only the code portions
